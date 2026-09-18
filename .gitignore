@@ -48,3 +48,7 @@ screenshots/
 .chrome-temp-*
 **/.chrome-temp-*
 .temp-chrome-profile/
+
+# Prompts and Internal Build Packages
+Wayzyy_AI_Trip_Concierge_Antigravity_Build_Package/
+prompts/
