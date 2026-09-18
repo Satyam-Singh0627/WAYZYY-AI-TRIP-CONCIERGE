@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GOA-TEMPLE-001",
+    "name": "Shantadurga Temple",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.3622,
+      "lng": 73.9878
+    },
+    "address": "Shantadurga Temple, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "hindu heritage",
+      "peace deity",
+      "architecture"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-002",
+    "name": "Mahadev Temple Tambdi Surla",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Netravali",
+    "coordinates": {
+      "lat": 15.4394,
+      "lng": 74.2589
+    },
+    "address": "Mahadev Temple Tambdi Surla, Netravali, South Goa, Goa",
+    "tags": [
+      "temple",
+      "12th century",
+      "kadamba architecture",
+      "jungle"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-003",
+    "name": "Mahalaxmi Temple",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.3989,
+      "lng": 73.9967
+    },
+    "address": "Mahalaxmi Temple, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "ancient shrine",
+      "bandora",
+      "heritage"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-004",
+    "name": "Mahalsa Narayani Temple",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.4219,
+      "lng": 73.9856
+    },
+    "address": "Mahalsa Narayani Temple, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "brass deepastambha",
+      "mardol",
+      "culture"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-005",
+    "name": "Kamakshi Temple",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.3511,
+      "lng": 74.0044
+    },
+    "address": "Kamakshi Temple, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "shiroda",
+      "water tank",
+      "spiritual"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-006",
+    "name": "Tapobhoomi",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.4122,
+      "lng": 74.0211
+    },
+    "address": "Tapobhoomi, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "spiritual center",
+      "ayurveda",
+      "meditation"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

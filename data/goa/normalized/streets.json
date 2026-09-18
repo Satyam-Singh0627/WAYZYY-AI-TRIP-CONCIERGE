@@ -1,0 +1,182 @@
+[
+  {
+    "id": "STR-001",
+    "name": "Candolim Beach Road",
+    "area": "Candolim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.518,
+      "lng": 73.764
+    }
+  },
+  {
+    "id": "STR-002",
+    "name": "Fort Aguada Road",
+    "area": "Candolim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.515,
+      "lng": 73.766
+    }
+  },
+  {
+    "id": "STR-003",
+    "name": "Sinquerim Road",
+    "area": "Sinquerim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.501,
+      "lng": 73.769
+    }
+  },
+  {
+    "id": "STR-004",
+    "name": "Calangute-Baga Road",
+    "area": "Calangute",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.549,
+      "lng": 73.753
+    }
+  },
+  {
+    "id": "STR-005",
+    "name": "Tito's Lane",
+    "area": "Baga",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.556,
+      "lng": 73.752
+    }
+  },
+  {
+    "id": "STR-006",
+    "name": "Anjuna Mapusa Road",
+    "area": "Anjuna",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.582,
+      "lng": 73.748
+    }
+  },
+  {
+    "id": "STR-007",
+    "name": "Vagator Beach Road",
+    "area": "Vagator",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.603,
+      "lng": 73.734
+    }
+  },
+  {
+    "id": "STR-008",
+    "name": "18th June Road",
+    "area": "Panaji",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.494,
+      "lng": 73.827
+    }
+  },
+  {
+    "id": "STR-009",
+    "name": "D.B. Road",
+    "area": "Panaji",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.498,
+      "lng": 73.829
+    }
+  },
+  {
+    "id": "STR-010",
+    "name": "Dayanand Bandodkar Marg",
+    "area": "Panaji",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.488,
+      "lng": 73.818
+    }
+  },
+  {
+    "id": "STR-011",
+    "name": "Old Goa Road",
+    "area": "Old Goa",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.503,
+      "lng": 73.91
+    }
+  },
+  {
+    "id": "STR-012",
+    "name": "Margao-Colva Road",
+    "area": "Colva",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.275,
+      "lng": 73.935
+    }
+  },
+  {
+    "id": "STR-013",
+    "name": "Colva Beach Road",
+    "area": "Colva",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.279,
+      "lng": 73.916
+    }
+  },
+  {
+    "id": "STR-014",
+    "name": "Palolem Beach Road",
+    "area": "Palolem",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.011,
+      "lng": 74.024
+    }
+  },
+  {
+    "id": "STR-015",
+    "name": "Agonda Beach Road",
+    "area": "Agonda",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.045,
+      "lng": 73.989
+    }
+  },
+  {
+    "id": "STR-016",
+    "name": "Morjim Beach Road",
+    "area": "Morjim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.633,
+      "lng": 73.733
+    }
+  },
+  {
+    "id": "STR-017",
+    "name": "Assagao Badem Road",
+    "area": "Assagao",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.593,
+      "lng": 73.776
+    }
+  },
+  {
+    "id": "STR-018",
+    "name": "Mapusa-Anjuna Road",
+    "area": "Mapusa",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.591,
+      "lng": 73.792
+    }
+  }
+]

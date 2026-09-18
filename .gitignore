@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+
+# Environment and Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials/
+secrets/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build, Cache and Coverage
+dist/
+build/
+coverage/
+.nyc_output/
+.next/
+.cache/
+.vite/
+.turbo/
+
+# Temporary and Test Profiles
+.tmp/
+temp/
+tmp/
+screenshots/
+.chrome-temp-*
+**/.chrome-temp-*
+.temp-chrome-profile/

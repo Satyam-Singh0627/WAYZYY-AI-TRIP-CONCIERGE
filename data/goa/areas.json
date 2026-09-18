@@ -1,0 +1,921 @@
+[
+  {
+    "id": "AREA-CANDOLIM",
+    "name": "Candolim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5178,
+      "lng": 73.7634
+    },
+    "nearby": [
+      "Sinquerim",
+      "Calangute",
+      "Nerul",
+      "Reis Magos"
+    ],
+    "key_streets": [
+      "Candolim Beach Road",
+      "Fort Aguada Road",
+      "Sinquerim Road"
+    ],
+    "vibe": [
+      "coastal",
+      "luxury villas",
+      "water sports",
+      "relaxed dining"
+    ],
+    "description": "Upscale coastal resort strip along Fort Aguada Road known for golden sands and beachside dining."
+  },
+  {
+    "id": "AREA-CALANGUTE",
+    "name": "Calangute",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5439,
+      "lng": 73.7553
+    },
+    "nearby": [
+      "Candolim",
+      "Baga",
+      "Saligao",
+      "Arpora"
+    ],
+    "key_streets": [
+      "Calangute-Baga Road",
+      "Tito's White House Road"
+    ],
+    "vibe": [
+      "lively",
+      "shopping",
+      "water sports",
+      "bustling markets"
+    ],
+    "description": "The 'Queen of Beaches', Goa's largest and most vibrant commercial beach hub."
+  },
+  {
+    "id": "AREA-BAGA",
+    "name": "Baga",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5553,
+      "lng": 73.7517
+    },
+    "nearby": [
+      "Calangute",
+      "Anjuna",
+      "Arpora"
+    ],
+    "key_streets": [
+      "Tito's Lane",
+      "Baga Creek Road"
+    ],
+    "vibe": [
+      "nightlife",
+      "party clubs",
+      "beach shacks",
+      "water sports"
+    ],
+    "description": "Epicenter of North Goa nightlife, famous for Tito's Lane and energetic beach shacks."
+  },
+  {
+    "id": "AREA-SINQUERIM",
+    "name": "Sinquerim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.4989,
+      "lng": 73.7681
+    },
+    "nearby": [
+      "Candolim",
+      "Nerul"
+    ],
+    "key_streets": [
+      "Sinquerim Road",
+      "Fort Aguada Access Road"
+    ],
+    "vibe": [
+      "heritage",
+      "scenic fort views",
+      "luxury resorts"
+    ],
+    "description": "Picturesque cove beneath the 17th-century ramparts of Fort Aguada."
+  },
+  {
+    "id": "AREA-ANJUNA",
+    "name": "Anjuna",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5804,
+      "lng": 73.7429
+    },
+    "nearby": [
+      "Vagator",
+      "Baga",
+      "Assagao"
+    ],
+    "key_streets": [
+      "Anjuna Mapusa Road",
+      "Fleamarket Road"
+    ],
+    "vibe": [
+      "bohemian",
+      "flea market",
+      "sunset trance",
+      "beach cafes"
+    ],
+    "description": "Historic bohemian haven celebrated for Curlies, red laterite cliffs, and weekly markets."
+  },
+  {
+    "id": "AREA-VAGATOR",
+    "name": "Vagator",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.6028,
+      "lng": 73.7336
+    },
+    "nearby": [
+      "Anjuna",
+      "Chapora",
+      "Siolim"
+    ],
+    "key_streets": [
+      "Vagator Beach Road",
+      "Ozran Beach Road"
+    ],
+    "vibe": [
+      "cliffside sunset",
+      "culinary bars",
+      "dramatic red cliffs"
+    ],
+    "description": "Dramatic cliff-backed beaches crowned by Chapora Fort, host to world-class sunset cocktail lounges."
+  },
+  {
+    "id": "AREA-CHAPORA",
+    "name": "Chapora",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.6074,
+      "lng": 73.7408
+    },
+    "nearby": [
+      "Vagator",
+      "Siolim"
+    ],
+    "key_streets": [
+      "Chapora Jetty Road",
+      "Fort Road"
+    ],
+    "vibe": [
+      "fishing village",
+      "fort ramparts",
+      "fresh juice bars"
+    ],
+    "description": "Quaint fishing community famed for the iconic 'Dil Chahta Hai' Chapora Fort."
+  },
+  {
+    "id": "AREA-ASSAGAO",
+    "name": "Assagao",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5925,
+      "lng": 73.7744
+    },
+    "nearby": [
+      "Anjuna",
+      "Siolim",
+      "Mapusa"
+    ],
+    "key_streets": [
+      "Assagao Badem Road"
+    ],
+    "vibe": [
+      "boutique villas",
+      "gourmet dining",
+      "lush heritage lanes",
+      "peaceful"
+    ],
+    "description": "Goa's premier culinary & design village nestled in quiet wooded valleys."
+  },
+  {
+    "id": "AREA-SIOLIM",
+    "name": "Siolim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.6264,
+      "lng": 73.7656
+    },
+    "nearby": [
+      "Assagao",
+      "Chapora",
+      "Morjim"
+    ],
+    "key_streets": [
+      "Siolim-Chopdem Bridge Road"
+    ],
+    "vibe": [
+      "riverside",
+      "heritage homes",
+      "bridge views"
+    ],
+    "description": "Scenic village along the Chapora River connecting North Goa to the northern beach belt."
+  },
+  {
+    "id": "AREA-MORJIM",
+    "name": "Morjim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.6322,
+      "lng": 73.7319
+    },
+    "nearby": [
+      "Ashwem",
+      "Siolim",
+      "Arambol"
+    ],
+    "key_streets": [
+      "Morjim Beach Road"
+    ],
+    "vibe": [
+      "olive ridley turtles",
+      "kite surfing",
+      "tranquil sands"
+    ],
+    "description": "Wide, serene sands protected as an Olive Ridley turtle nesting sanctuary."
+  },
+  {
+    "id": "AREA-ASHWEM",
+    "name": "Ashwem",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.6601,
+      "lng": 73.7197
+    },
+    "nearby": [
+      "Morjim",
+      "Mandrem"
+    ],
+    "key_streets": [
+      "Ashwem Beach Road"
+    ],
+    "vibe": [
+      "boutique beach clubs",
+      "palm fringed",
+      "chic bohemian"
+    ],
+    "description": "Laid-back, sophisticated beach haven lined with designer beach shacks and yoga retreats."
+  },
+  {
+    "id": "AREA-MANDREM",
+    "name": "Mandrem",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.6747,
+      "lng": 73.7144
+    },
+    "nearby": [
+      "Ashwem",
+      "Arambol"
+    ],
+    "key_streets": [
+      "Mandrem Beach Road"
+    ],
+    "vibe": [
+      "bamboo bridges",
+      "wellness",
+      "peaceful estuary"
+    ],
+    "description": "Idyllic stretch known for calm waters, quiet bamboo bridges, and wellness resorts."
+  },
+  {
+    "id": "AREA-ARAMBOL",
+    "name": "Arambol",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.6869,
+      "lng": 73.7042
+    },
+    "nearby": [
+      "Mandrem",
+      "Querim"
+    ],
+    "key_streets": [
+      "Arambol Beach Road"
+    ],
+    "vibe": [
+      "sweet water lake",
+      "drum circles",
+      "bohemian arts"
+    ],
+    "description": "Free-spirited northern haven famous for sunset drum circles, banyan tree walks, and sweet water lake."
+  },
+  {
+    "id": "AREA-PANAJI",
+    "name": "Panaji",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.4909,
+      "lng": 73.8278
+    },
+    "nearby": [
+      "Dona Paula",
+      "Miramar",
+      "Ribandar",
+      "Old Goa"
+    ],
+    "key_streets": [
+      "18th June Road",
+      "D.B. Road",
+      "Dayanand Bandodkar Marg"
+    ],
+    "vibe": [
+      "latin quarter",
+      "portuguese architecture",
+      "riverside promenade",
+      "capital"
+    ],
+    "description": "Goa's capital city, home to the UNESCO-favored Fontainhas Latin Quarter, casinos, and art galleries."
+  },
+  {
+    "id": "AREA-OLD-GOA",
+    "name": "Old Goa",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5033,
+      "lng": 73.9114
+    },
+    "nearby": [
+      "Panaji",
+      "Ponda"
+    ],
+    "key_streets": [
+      "Old Goa Road"
+    ],
+    "vibe": [
+      "unesco world heritage",
+      "monumental cathedrals",
+      "colonial history"
+    ],
+    "description": "Historic colonial capital famous for the Basilica of Bom Jesus and Se Cathedral."
+  },
+  {
+    "id": "AREA-REIS-MAGOS",
+    "name": "Reis Magos",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.4981,
+      "lng": 73.8089
+    },
+    "nearby": [
+      "Candolim",
+      "Nerul",
+      "Panaji"
+    ],
+    "key_streets": [
+      "Reis Magos Fort Road"
+    ],
+    "vibe": [
+      "restored fortress",
+      "mandovi river views",
+      "art exhibits"
+    ],
+    "description": "Riverside hamlet boasting the 1551 fortress and Mario Miranda art exhibition hall."
+  },
+  {
+    "id": "AREA-DONA-PAULA",
+    "name": "Dona Paula",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.4542,
+      "lng": 73.8058
+    },
+    "nearby": [
+      "Miramar",
+      "Bambolim",
+      "Panaji"
+    ],
+    "key_streets": [
+      "Dona Paula Jetty Road"
+    ],
+    "vibe": [
+      "viewpoint",
+      "promenade",
+      "ocean estuary"
+    ],
+    "description": "Famed lovers' leap viewpoint where the Zuari and Mandovi rivers meet the Arabian Sea."
+  },
+  {
+    "id": "AREA-MIRAMAR",
+    "name": "Miramar",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.4819,
+      "lng": 73.8086
+    },
+    "nearby": [
+      "Panaji",
+      "Dona Paula"
+    ],
+    "key_streets": [
+      "Dayanand Bandodkar Marg"
+    ],
+    "vibe": [
+      "city beach",
+      "sunset walk",
+      "casuarina pines"
+    ],
+    "description": "Panjim's accessible city beach fringed by casuarina trees facing Aguada bay."
+  },
+  {
+    "id": "AREA-BAMBOLIM",
+    "name": "Bambolim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.4489,
+      "lng": 73.8569
+    },
+    "nearby": [
+      "Dona Paula",
+      "Panaji"
+    ],
+    "key_streets": [
+      "Goa University Road"
+    ],
+    "vibe": [
+      "luxury resorts",
+      "quiet bay",
+      "sailing"
+    ],
+    "description": "Secluded bay in central Goa hosting luxury resorts and calm waters."
+  },
+  {
+    "id": "AREA-MAPUSA",
+    "name": "Mapusa",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5936,
+      "lng": 73.8144
+    },
+    "nearby": [
+      "Assagao",
+      "Porvorim"
+    ],
+    "key_streets": [
+      "Mapusa-Anjuna Road",
+      "Market Road"
+    ],
+    "vibe": [
+      "friday market",
+      "local spices",
+      "commercial hub"
+    ],
+    "description": "Northern market town renowned for its vibrant Friday bazaar of spices, pottery, and sausages."
+  },
+  {
+    "id": "AREA-PORVORIM",
+    "name": "Porvorim",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5267,
+      "lng": 73.8242
+    },
+    "nearby": [
+      "Panaji",
+      "Candolim",
+      "Mapusa"
+    ],
+    "key_streets": [
+      "NH66",
+      "Chogm Road"
+    ],
+    "vibe": [
+      "residential",
+      "shopping malls",
+      "museums"
+    ],
+    "description": "Plateau suburb connecting Panjim and the coast, home to the Houses of Goa Museum."
+  },
+  {
+    "id": "AREA-NERUL",
+    "name": "Nerul",
+    "region": "North Goa",
+    "coordinates": {
+      "lat": 15.5097,
+      "lng": 73.7844
+    },
+    "nearby": [
+      "Candolim",
+      "Reis Magos",
+      "Sinquerim"
+    ],
+    "key_streets": [
+      "Nerul River Road"
+    ],
+    "vibe": [
+      "backwaters",
+      "mangroves",
+      "quiet villas"
+    ],
+    "description": "Peaceful backwater river village bordering Candolim with lush mangrove channels."
+  },
+  {
+    "id": "AREA-PONDA",
+    "name": "Ponda",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.4026,
+      "lng": 74.0153
+    },
+    "nearby": [
+      "Old Goa",
+      "Margao"
+    ],
+    "key_streets": [
+      "Ponda-Panaji Highway"
+    ],
+    "vibe": [
+      "spice plantations",
+      "hindu temples",
+      "cultural heartland"
+    ],
+    "description": "Goa's cultural center known for spice plantations and grand 18th-century Hindu temples."
+  },
+  {
+    "id": "AREA-VASCO",
+    "name": "Vasco da Gama",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.3989,
+      "lng": 73.8128
+    },
+    "nearby": [
+      "Bogmalo"
+    ],
+    "key_streets": [
+      "Swatantra Path",
+      "Airport Road"
+    ],
+    "vibe": [
+      "port city",
+      "airport gateway",
+      "naval museum"
+    ],
+    "description": "Industrial port town home to Dabolim International Airport and Naval Aviation Museum."
+  },
+  {
+    "id": "AREA-BOGMALO",
+    "name": "Bogmalo",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.3789,
+      "lng": 73.8344
+    },
+    "nearby": [
+      "Vasco da Gama"
+    ],
+    "key_streets": [
+      "Bogmalo Beach Road"
+    ],
+    "vibe": [
+      "scuba diving",
+      "cove beach",
+      "close to airport"
+    ],
+    "description": "Curved sandy cove near Dabolim airport, famous for scuba diving expeditions."
+  },
+  {
+    "id": "AREA-BETUL",
+    "name": "Betul",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.1489,
+      "lng": 73.9536
+    },
+    "nearby": [
+      "Mobor",
+      "Cavelossim",
+      "Cabo de Rama"
+    ],
+    "key_streets": [
+      "Betul Beach Road"
+    ],
+    "vibe": [
+      "fishing village",
+      "quiet estuary",
+      "seafood"
+    ],
+    "description": "Peaceful fishing village where the Sal River meets the sea, famous for quiet coastline and fresh catch."
+  },
+  {
+    "id": "AREA-CANACONA",
+    "name": "Canacona",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.0111,
+      "lng": 74.0208
+    },
+    "nearby": [
+      "Palolem",
+      "Patnem",
+      "Agonda"
+    ],
+    "key_streets": [
+      "Canacona Highway Road"
+    ],
+    "vibe": [
+      "southern gateway",
+      "hills",
+      "waterfalls"
+    ],
+    "description": "The southernmost taluka of Goa, blessed with pristine crescent beaches, lagoons, and jungle waterfalls."
+  },
+  {
+    "id": "AREA-DUDHSAGAR",
+    "name": "Dudhsagar",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.3144,
+      "lng": 74.3144
+    },
+    "nearby": [
+      "Colem",
+      "Ponda"
+    ],
+    "key_streets": [
+      "Dudhsagar Railway Road"
+    ],
+    "vibe": [
+      "four tiered waterfall",
+      "ghats",
+      "trekking"
+    ],
+    "description": "Four-tiered waterfall on the Mandovi River located in Bhagwan Mahaveer Sanctuary."
+  },
+  {
+    "id": "AREA-NETRAVALI",
+    "name": "Netravali",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.0889,
+      "lng": 74.2144
+    },
+    "nearby": [
+      "Sanguem",
+      "Canacona"
+    ],
+    "key_streets": [
+      "Netravali Sanctuary Road"
+    ],
+    "vibe": [
+      "bubble lake",
+      "rainforest",
+      "tambdi surla"
+    ],
+    "description": "Lush eco-tourism haven famous for Netravali Wildlife Sanctuary and the ancient Kadamba temple at Tambdi Surla."
+  },
+  {
+    "id": "AREA-MARGAO",
+    "name": "Margao",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.2736,
+      "lng": 73.9583
+    },
+    "nearby": [
+      "Colva",
+      "Benaulim"
+    ],
+    "key_streets": [
+      "Margao-Colva Road",
+      "Station Road"
+    ],
+    "vibe": [
+      "commercial capital",
+      "historic mansions",
+      "railway hub"
+    ],
+    "description": "South Goa's historic commercial hub renowned for palatial Portuguese mansions and spice markets."
+  },
+  {
+    "id": "AREA-COLVA",
+    "name": "Colva",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.2792,
+      "lng": 73.9144
+    },
+    "nearby": [
+      "Margao",
+      "Benaulim",
+      "Betalbatim"
+    ],
+    "key_streets": [
+      "Colva Beach Road"
+    ],
+    "vibe": [
+      "white sands",
+      "seafood shacks",
+      "popular family beach"
+    ],
+    "description": "Classic South Goa beach with expansive powdery white sands and popular water sports."
+  },
+  {
+    "id": "AREA-BENAULIM",
+    "name": "Benaulim",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.2589,
+      "lng": 73.9178
+    },
+    "nearby": [
+      "Colva",
+      "Varca"
+    ],
+    "key_streets": [
+      "Benaulim Beach Road"
+    ],
+    "vibe": [
+      "dolphin spotting",
+      "peaceful",
+      "fishing shacks"
+    ],
+    "description": "Tranquil coastal village known for dolphin watching trips and fresh catch shacks."
+  },
+  {
+    "id": "AREA-BETALBATIM",
+    "name": "Betalbatim",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.2978,
+      "lng": 73.9122
+    },
+    "nearby": [
+      "Colva",
+      "Majorda"
+    ],
+    "key_streets": [
+      "Sunset Beach Road"
+    ],
+    "vibe": [
+      "sunset beach",
+      "quiet pine groves",
+      "peaceful"
+    ],
+    "description": "Serene white-sand stretch known as 'Sunset Beach', shaded by casuarina pines."
+  },
+  {
+    "id": "AREA-MAJORDA",
+    "name": "Majorda",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.3144,
+      "lng": 73.9089
+    },
+    "nearby": [
+      "Betalbatim",
+      "Utorda"
+    ],
+    "key_streets": [
+      "Majorda Beach Road"
+    ],
+    "vibe": [
+      "goan bakeries",
+      "wide sands",
+      "luxury hotels"
+    ],
+    "description": "Historic bakery village boasting miles of golden sand and top European-influenced bakers."
+  },
+  {
+    "id": "AREA-VARCA",
+    "name": "Varca",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.2289,
+      "lng": 73.9236
+    },
+    "nearby": [
+      "Benaulim",
+      "Cavelossim"
+    ],
+    "key_streets": [
+      "Varca Beach Road"
+    ],
+    "vibe": [
+      "luxury resorts",
+      "wooden fishing boats",
+      "pristine sands"
+    ],
+    "description": "Immaculate white sand strip lined with 5-star luxury beachfront properties."
+  },
+  {
+    "id": "AREA-CAVELOSSIM",
+    "name": "Cavelossim",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.1789,
+      "lng": 73.9458
+    },
+    "nearby": [
+      "Varca",
+      "Mobor"
+    ],
+    "key_streets": [
+      "Cavelossim Beach Road"
+    ],
+    "vibe": [
+      "sal river cruises",
+      "black lava rocks",
+      "quiet luxury"
+    ],
+    "description": "Picturesque stretch wedged between the Arabian Sea and the Sal River, renowned for dolphin cruises."
+  },
+  {
+    "id": "AREA-MOBOR",
+    "name": "Mobor",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.1589,
+      "lng": 73.9489
+    },
+    "nearby": [
+      "Cavelossim",
+      "Betul"
+    ],
+    "key_streets": [
+      "Mobor Peninsula Road"
+    ],
+    "vibe": [
+      "peninsula",
+      "river confluence",
+      "water sports"
+    ],
+    "description": "Slender sandy spit where the Sal River meets the sea, popular for water skiing and luxury stays."
+  },
+  {
+    "id": "AREA-PALOLEM",
+    "name": "Palolem",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.01,
+      "lng": 74.0231
+    },
+    "nearby": [
+      "Patnem",
+      "Agonda",
+      "Canacona"
+    ],
+    "key_streets": [
+      "Palolem Beach Road"
+    ],
+    "vibe": [
+      "crescent bay",
+      "kayaking",
+      "silent noise parties",
+      "coconut groves"
+    ],
+    "description": "World-famous golden crescent bay framed by tall palms and calm, swimmable blue waters."
+  },
+  {
+    "id": "AREA-PATNEM",
+    "name": "Patnem",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 14.9972,
+      "lng": 74.0328
+    },
+    "nearby": [
+      "Palolem",
+      "Canacona"
+    ],
+    "key_streets": [
+      "Patnem Beach Road"
+    ],
+    "vibe": [
+      "peaceful yoga",
+      "laid back shacks",
+      "unhurried"
+    ],
+    "description": "Smaller, calmer neighbor to Palolem, favored by yogis and long-stay travelers."
+  },
+  {
+    "id": "AREA-AGONDA",
+    "name": "Agonda",
+    "region": "South Goa",
+    "coordinates": {
+      "lat": 15.0442,
+      "lng": 73.9878
+    },
+    "nearby": [
+      "Palolem",
+      "Cola"
+    ],
+    "key_streets": [
+      "Agonda Beach Road"
+    ],
+    "vibe": [
+      "turtle sanctuary",
+      "pristine quiet",
+      "surf schools"
+    ],
+    "description": "Wide, peaceful 3km coastline designated as a protected sea turtle nesting ground."
+  }
+]

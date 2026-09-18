@@ -1,0 +1,4021 @@
+[
+  {
+    "id": "GOA-BEACH-001",
+    "name": "Agonda Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Agonda",
+    "coordinates": {
+      "lat": 15.0442,
+      "lng": 73.9878
+    },
+    "address": "Agonda Beach, Agonda, South Goa, Goa",
+    "tags": [
+      "beach",
+      "turtle sanctuary",
+      "quiet",
+      "surfing"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-002",
+    "name": "Aguada Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Sinquerim",
+    "coordinates": {
+      "lat": 15.4989,
+      "lng": 73.7681
+    },
+    "address": "Aguada Beach, Sinquerim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "fort views",
+      "luxury",
+      "water sports"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-003",
+    "name": "Arambol Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Arambol",
+    "coordinates": {
+      "lat": 15.6869,
+      "lng": 73.7042
+    },
+    "address": "Arambol Beach, Arambol, North Goa, Goa",
+    "tags": [
+      "beach",
+      "sweet lake",
+      "drum circle",
+      "bohemian"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-004",
+    "name": "Anjuna Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Anjuna",
+    "coordinates": {
+      "lat": 15.5804,
+      "lng": 73.7429
+    },
+    "address": "Anjuna Beach, Anjuna, North Goa, Goa",
+    "tags": [
+      "beach",
+      "flea market",
+      "curlies",
+      "rocky"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-005",
+    "name": "Ashwem Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Ashwem",
+    "coordinates": {
+      "lat": 15.6601,
+      "lng": 73.7197
+    },
+    "address": "Ashwem Beach, Ashwem, North Goa, Goa",
+    "tags": [
+      "beach",
+      "boutique",
+      "chic",
+      "palm groves"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-006",
+    "name": "Baga Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Baga",
+    "coordinates": {
+      "lat": 15.5553,
+      "lng": 73.7517
+    },
+    "address": "Baga Beach, Baga, North Goa, Goa",
+    "tags": [
+      "beach",
+      "nightlife",
+      "water sports",
+      "shacks"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-007",
+    "name": "Bambolim Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Bambolim",
+    "coordinates": {
+      "lat": 15.4489,
+      "lng": 73.8569
+    },
+    "address": "Bambolim Beach, Bambolim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "calm",
+      "resorts",
+      "sailing"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-008",
+    "name": "Benaulim Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Benaulim",
+    "coordinates": {
+      "lat": 15.2589,
+      "lng": 73.9178
+    },
+    "address": "Benaulim Beach, Benaulim, South Goa, Goa",
+    "tags": [
+      "beach",
+      "dolphin watching",
+      "peaceful"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-009",
+    "name": "Betalbatim Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Betalbatim",
+    "coordinates": {
+      "lat": 15.2978,
+      "lng": 73.9122
+    },
+    "address": "Betalbatim Beach, Betalbatim, South Goa, Goa",
+    "tags": [
+      "beach",
+      "sunset",
+      "pine groves",
+      "quiet"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-010",
+    "name": "Betul Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Betul",
+    "coordinates": {
+      "lat": 15.1489,
+      "lng": 73.9536
+    },
+    "address": "Betul Beach, Betul, South Goa, Goa",
+    "tags": [
+      "beach",
+      "fishing port",
+      "river mouth",
+      "seafood"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-011",
+    "name": "Bogmalo Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Bogmalo",
+    "coordinates": {
+      "lat": 15.3789,
+      "lng": 73.8344
+    },
+    "address": "Bogmalo Beach, Bogmalo, South Goa, Goa",
+    "tags": [
+      "beach",
+      "scuba diving",
+      "cove",
+      "near airport"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-012",
+    "name": "Butterfly Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Palolem",
+    "coordinates": {
+      "lat": 15.0256,
+      "lng": 74.0044
+    },
+    "address": "Butterfly Beach, Palolem, South Goa, Goa",
+    "tags": [
+      "beach",
+      "hidden cove",
+      "boat access",
+      "dolphins"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-013",
+    "name": "Calangute Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Calangute",
+    "coordinates": {
+      "lat": 15.5439,
+      "lng": 73.7553
+    },
+    "address": "Calangute Beach, Calangute, North Goa, Goa",
+    "tags": [
+      "beach",
+      "queen of beaches",
+      "water sports",
+      "shopping"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-014",
+    "name": "Candolim Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5178,
+      "lng": 73.7634
+    },
+    "address": "Candolim Beach, Candolim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "water sports",
+      "relaxed",
+      "fine dining"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-015",
+    "name": "Cola Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Canacona",
+    "coordinates": {
+      "lat": 15.0611,
+      "lng": 73.9744
+    },
+    "address": "Cola Beach, Canacona, South Goa, Goa",
+    "tags": [
+      "beach",
+      "blue lagoon",
+      "hidden",
+      "kayaking"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-016",
+    "name": "Galgibaga / Turtle Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Canacona",
+    "coordinates": {
+      "lat": 14.9658,
+      "lng": 74.0489
+    },
+    "address": "Galgibaga / Turtle Beach, Canacona, South Goa, Goa",
+    "tags": [
+      "beach",
+      "olive ridley turtle",
+      "protected",
+      "pristine"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-017",
+    "name": "Majorda Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Majorda",
+    "coordinates": {
+      "lat": 15.3144,
+      "lng": 73.9089
+    },
+    "address": "Majorda Beach, Majorda, South Goa, Goa",
+    "tags": [
+      "beach",
+      "white sands",
+      "bakeries",
+      "wide shore"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-018",
+    "name": "Miramar Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4819,
+      "lng": 73.8086
+    },
+    "address": "Miramar Beach, Panaji, North Goa, Goa",
+    "tags": [
+      "beach",
+      "city beach",
+      "mandovi estuary",
+      "sunset walk"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-019",
+    "name": "Morjim Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Morjim",
+    "coordinates": {
+      "lat": 15.6322,
+      "lng": 73.7319
+    },
+    "address": "Morjim Beach, Morjim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "turtle nesting",
+      "kitesurfing",
+      "quiet"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-020",
+    "name": "Palolem Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Palolem",
+    "coordinates": {
+      "lat": 15.01,
+      "lng": 74.0231
+    },
+    "address": "Palolem Beach, Palolem, South Goa, Goa",
+    "tags": [
+      "beach",
+      "crescent bay",
+      "kayaking",
+      "scenic"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-021",
+    "name": "Patnem Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Patnem",
+    "coordinates": {
+      "lat": 14.9972,
+      "lng": 74.0328
+    },
+    "address": "Patnem Beach, Patnem, South Goa, Goa",
+    "tags": [
+      "beach",
+      "yoga",
+      "chill shacks",
+      "swimming"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-022",
+    "name": "Sinquerim Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Sinquerim",
+    "coordinates": {
+      "lat": 15.5019,
+      "lng": 73.7678
+    },
+    "address": "Sinquerim Beach, Sinquerim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "fort aguada",
+      "jet ski",
+      "scenic"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-023",
+    "name": "Vagator Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Vagator",
+    "coordinates": {
+      "lat": 15.6028,
+      "lng": 73.7336
+    },
+    "address": "Vagator Beach, Vagator, North Goa, Goa",
+    "tags": [
+      "beach",
+      "red cliffs",
+      "chapora views",
+      "sunsets"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-024",
+    "name": "Varca Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Varca",
+    "coordinates": {
+      "lat": 15.2289,
+      "lng": 73.9236
+    },
+    "address": "Varca Beach, Varca, South Goa, Goa",
+    "tags": [
+      "beach",
+      "luxury resorts",
+      "white sand",
+      "calm"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-025",
+    "name": "Cavelossim Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Cavelossim",
+    "coordinates": {
+      "lat": 15.1789,
+      "lng": 73.9458
+    },
+    "address": "Cavelossim Beach, Cavelossim, South Goa, Goa",
+    "tags": [
+      "beach",
+      "black rocks",
+      "dolphin cruises",
+      "quiet"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-026",
+    "name": "Mobor Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Mobor",
+    "coordinates": {
+      "lat": 15.1589,
+      "lng": 73.9489
+    },
+    "address": "Mobor Beach, Mobor, South Goa, Goa",
+    "tags": [
+      "beach",
+      "peninsula",
+      "sal river mouth",
+      "water sports"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-001",
+    "name": "Fort Aguada",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Sinquerim",
+    "coordinates": {
+      "lat": 15.4925,
+      "lng": 73.7736
+    },
+    "address": "Fort Aguada, Sinquerim, North Goa, Goa",
+    "tags": [
+      "fort",
+      "lighthouse",
+      "mandovi views",
+      "history"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-002",
+    "name": "Lower Aguada Fort",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Sinquerim",
+    "coordinates": {
+      "lat": 15.4947,
+      "lng": 73.7661
+    },
+    "address": "Lower Aguada Fort, Sinquerim, North Goa, Goa",
+    "tags": [
+      "fort",
+      "sea wall",
+      "jail museum",
+      "coastal ramparts"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-003",
+    "name": "Chapora Fort",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Chapora",
+    "coordinates": {
+      "lat": 15.6074,
+      "lng": 73.7408
+    },
+    "address": "Chapora Fort, Chapora, North Goa, Goa",
+    "tags": [
+      "fort",
+      "sunset",
+      "dil chahta hai",
+      "river views"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-004",
+    "name": "Reis Magos Fort",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Reis Magos",
+    "coordinates": {
+      "lat": 15.4981,
+      "lng": 73.8089
+    },
+    "address": "Reis Magos Fort, Reis Magos, North Goa, Goa",
+    "tags": [
+      "fort",
+      "museum",
+      "mario miranda",
+      "covered halls"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.8
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-005",
+    "name": "Cabo de Rama Fort",
+    "type": "fort",
+    "region": "South Goa",
+    "area": "Canacona",
+    "coordinates": {
+      "lat": 15.0889,
+      "lng": 73.9219
+    },
+    "address": "Cabo de Rama Fort, Canacona, South Goa, Goa",
+    "tags": [
+      "fort",
+      "remote",
+      "dramatic sea cliff",
+      "church"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-006",
+    "name": "Corjuem Fort",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Mapusa",
+    "coordinates": {
+      "lat": 15.5978,
+      "lng": 73.8967
+    },
+    "address": "Corjuem Fort, Mapusa, North Goa, Goa",
+    "tags": [
+      "fort",
+      "inland fort",
+      "river island",
+      "history"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-001",
+    "name": "Shantadurga Temple",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.3622,
+      "lng": 73.9878
+    },
+    "address": "Shantadurga Temple, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "hindu heritage",
+      "peace deity",
+      "architecture"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-002",
+    "name": "Mahadev Temple Tambdi Surla",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Netravali",
+    "coordinates": {
+      "lat": 15.4394,
+      "lng": 74.2589
+    },
+    "address": "Mahadev Temple Tambdi Surla, Netravali, South Goa, Goa",
+    "tags": [
+      "temple",
+      "12th century",
+      "kadamba architecture",
+      "jungle"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-003",
+    "name": "Mahalaxmi Temple",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.3989,
+      "lng": 73.9967
+    },
+    "address": "Mahalaxmi Temple, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "ancient shrine",
+      "bandora",
+      "heritage"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-004",
+    "name": "Mahalsa Narayani Temple",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.4219,
+      "lng": 73.9856
+    },
+    "address": "Mahalsa Narayani Temple, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "brass deepastambha",
+      "mardol",
+      "culture"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-005",
+    "name": "Kamakshi Temple",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.3511,
+      "lng": 74.0044
+    },
+    "address": "Kamakshi Temple, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "shiroda",
+      "water tank",
+      "spiritual"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-TEMPLE-006",
+    "name": "Tapobhoomi",
+    "type": "temple",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.4122,
+      "lng": 74.0211
+    },
+    "address": "Tapobhoomi, Ponda, South Goa, Goa",
+    "tags": [
+      "temple",
+      "spiritual center",
+      "ayurveda",
+      "meditation"
+    ],
+    "categories": [
+      "temples",
+      "spiritual",
+      "heritage",
+      "culture"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "evening"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "06:00 - 20:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-001",
+    "name": "Basilica of Bom Jesus",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5008,
+      "lng": 73.9117
+    },
+    "address": "Basilica of Bom Jesus, Old Goa, North Goa, Goa",
+    "tags": [
+      "unesco",
+      "st francis xavier",
+      "baroque",
+      "heritage"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-002",
+    "name": "Se Cathedral",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5039,
+      "lng": 73.9125
+    },
+    "address": "Se Cathedral, Old Goa, North Goa, Goa",
+    "tags": [
+      "unesco",
+      "golden bell",
+      "cathedral",
+      "largest in asia"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-003",
+    "name": "Church of Saint Augustine Ruins",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5019,
+      "lng": 73.9056
+    },
+    "address": "Church of Saint Augustine Ruins, Old Goa, North Goa, Goa",
+    "tags": [
+      "ruins",
+      "belfry tower",
+      "unesco",
+      "history"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-004",
+    "name": "St Cajetan Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5056,
+      "lng": 73.9144
+    },
+    "address": "St Cajetan Church, Old Goa, North Goa, Goa",
+    "tags": [
+      "corinthian",
+      "st peters rome replica",
+      "quiet",
+      "heritage"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-005",
+    "name": "St Francis of Assisi Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5036,
+      "lng": 73.9122
+    },
+    "address": "St Francis of Assisi Church, Old Goa, North Goa, Goa",
+    "tags": [
+      "manueline",
+      "museum",
+      "wood carvings",
+      "unesco"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-006",
+    "name": "Immaculate Conception Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4989,
+      "lng": 73.8292
+    },
+    "address": "Immaculate Conception Church, Panaji, North Goa, Goa",
+    "tags": [
+      "zigzag stairs",
+      "iconic landmark",
+      "panaji",
+      "portuguese"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-007",
+    "name": "Old Goa Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5028,
+      "lng": 73.9111
+    },
+    "address": "Old Goa Church, Old Goa, North Goa, Goa",
+    "tags": [
+      "heritage precinct",
+      "unesco",
+      "architecture"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-008",
+    "name": "Santa Monica Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5022,
+      "lng": 73.9067
+    },
+    "address": "Santa Monica Church, Old Goa, North Goa, Goa",
+    "tags": [
+      "convent",
+      "christian art museum",
+      "covered",
+      "heritage"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-001",
+    "name": "Houses of Goa Museum",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Porvorim",
+    "coordinates": {
+      "lat": 15.5267,
+      "lng": 73.8242
+    },
+    "address": "Houses of Goa Museum, Porvorim, North Goa, Goa",
+    "tags": [
+      "museum",
+      "architecture",
+      "ship shaped",
+      "gerard da cunha",
+      "rain safe"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-002",
+    "name": "Goa Chitra Museum",
+    "type": "museum",
+    "region": "South Goa",
+    "area": "Benaulim",
+    "coordinates": {
+      "lat": 15.2636,
+      "lng": 73.9311
+    },
+    "address": "Goa Chitra Museum, Benaulim, South Goa, Goa",
+    "tags": [
+      "museum",
+      "ethnographic",
+      "agrarian tools",
+      "organic farm"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-003",
+    "name": "Goa Science Centre",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Miramar",
+    "coordinates": {
+      "lat": 15.4767,
+      "lng": 73.8111
+    },
+    "address": "Goa Science Centre, Miramar, North Goa, Goa",
+    "tags": [
+      "museum",
+      "science",
+      "planetarium",
+      "kids friendly",
+      "indoor"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-004",
+    "name": "Dharohar (National Customs & GST Museum)",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4981,
+      "lng": 73.8306
+    },
+    "address": "Dharohar (National Customs & GST Museum), Panaji, North Goa, Goa",
+    "tags": [
+      "heritage",
+      "blue building",
+      "customs history",
+      "indoor"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-005",
+    "name": "Kala Academy",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4897,
+      "lng": 73.8189
+    },
+    "address": "Kala Academy, Panaji, North Goa, Goa",
+    "tags": [
+      "culture",
+      "theatre",
+      "art exhibitions",
+      "charles correa",
+      "covered"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-006",
+    "name": "Maquinez Palace",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4956,
+      "lng": 73.8258
+    },
+    "address": "Maquinez Palace, Panaji, North Goa, Goa",
+    "tags": [
+      "film heritage",
+      "iffi venue",
+      "art cinema",
+      "indoor"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-007",
+    "name": "Mario Miranda Gallery & Art Cafe",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5167,
+      "lng": 73.7661
+    },
+    "address": "Mario Miranda Gallery & Art Cafe, Candolim, North Goa, Goa",
+    "tags": [
+      "art",
+      "souvenirs",
+      "cartoonist",
+      "indoor",
+      "cafe"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NATURE-001",
+    "name": "Dudhsagar Waterfalls",
+    "type": "nature",
+    "region": "South Goa",
+    "area": "Dudhsagar",
+    "coordinates": {
+      "lat": 15.3144,
+      "lng": 74.3144
+    },
+    "address": "Dudhsagar Waterfalls, Dudhsagar, South Goa, Goa",
+    "tags": [
+      "waterfall",
+      "sea of milk",
+      "jeep safari",
+      "trekking"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NATURE-002",
+    "name": "Arvalem Waterfalls",
+    "type": "nature",
+    "region": "North Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.5564,
+      "lng": 74.0264
+    },
+    "address": "Arvalem Waterfalls, Ponda, North Goa, Goa",
+    "tags": [
+      "waterfall",
+      "harvalem",
+      "nature cascade",
+      "rudreshwar"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NATURE-003",
+    "name": "Netravali Wildlife Sanctuary",
+    "type": "nature",
+    "region": "South Goa",
+    "area": "Netravali",
+    "coordinates": {
+      "lat": 15.0889,
+      "lng": 74.2144
+    },
+    "address": "Netravali Wildlife Sanctuary, Netravali, South Goa, Goa",
+    "tags": [
+      "wildlife",
+      "rainforest",
+      "black panther",
+      "nature trails"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NATURE-004",
+    "name": "Kesarval Spring",
+    "type": "nature",
+    "region": "South Goa",
+    "area": "Vasco da Gama",
+    "coordinates": {
+      "lat": 15.3611,
+      "lng": 73.9167
+    },
+    "address": "Kesarval Spring, Vasco da Gama, South Goa, Goa",
+    "tags": [
+      "spring",
+      "medicinal waters",
+      "betel palms",
+      "quiet"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NATURE-005",
+    "name": "Bubble Lake (Netravali)",
+    "type": "nature",
+    "region": "South Goa",
+    "area": "Netravali",
+    "coordinates": {
+      "lat": 15.0978,
+      "lng": 74.1989
+    },
+    "address": "Bubble Lake (Netravali), Netravali, South Goa, Goa",
+    "tags": [
+      "natural wonder",
+      "acoustic bubbles",
+      "gopinath temple",
+      "eco"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NATURE-006",
+    "name": "Arvalem Caves",
+    "type": "nature",
+    "region": "North Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.5539,
+      "lng": 74.0244
+    },
+    "address": "Arvalem Caves, Ponda, North Goa, Goa",
+    "tags": [
+      "caves",
+      "pandava caves",
+      "rock cut",
+      "6th century"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NATURE-007",
+    "name": "Chapoli Dam",
+    "type": "nature",
+    "region": "South Goa",
+    "area": "Canacona",
+    "coordinates": {
+      "lat": 15.0189,
+      "lng": 74.0844
+    },
+    "address": "Chapoli Dam, Canacona, South Goa, Goa",
+    "tags": [
+      "dam",
+      "ecotourism",
+      "freshwater reservoir",
+      "hills"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-001",
+    "name": "Panaji Residency",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4994,
+      "lng": 73.8286
+    },
+    "address": "Panaji Residency, Panaji, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-002",
+    "name": "Calangute Residency",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Calangute",
+    "coordinates": {
+      "lat": 15.5422,
+      "lng": 73.7547
+    },
+    "address": "Calangute Residency, Calangute, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-003",
+    "name": "Vasco Residency",
+    "type": "hotel",
+    "region": "South Goa",
+    "area": "Vasco da Gama",
+    "coordinates": {
+      "lat": 15.3989,
+      "lng": 73.8119
+    },
+    "address": "Vasco Residency, Vasco da Gama, South Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-004",
+    "name": "Margao Residency",
+    "type": "hotel",
+    "region": "South Goa",
+    "area": "Margao",
+    "coordinates": {
+      "lat": 15.2747,
+      "lng": 73.9575
+    },
+    "address": "Margao Residency, Margao, South Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-005",
+    "name": "Old Goa Residency",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5019,
+      "lng": 73.9122
+    },
+    "address": "Old Goa Residency, Old Goa, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-006",
+    "name": "Farmagudi Residency",
+    "type": "hotel",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.4111,
+      "lng": 74.0089
+    },
+    "address": "Farmagudi Residency, Ponda, South Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-007",
+    "name": "Mayem Lake View",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Mapusa",
+    "coordinates": {
+      "lat": 15.5819,
+      "lng": 73.9219
+    },
+    "address": "Mayem Lake View, Mapusa, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-008",
+    "name": "Fort Tiracol Heritage Hotel",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Arambol",
+    "coordinates": {
+      "lat": 15.7289,
+      "lng": 73.6844
+    },
+    "address": "Fort Tiracol Heritage Hotel, Arambol, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-009",
+    "name": "Mapusa Residency",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Mapusa",
+    "coordinates": {
+      "lat": 15.5925,
+      "lng": 73.8139
+    },
+    "address": "Mapusa Residency, Mapusa, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-010",
+    "name": "Miramar Residency",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4811,
+      "lng": 73.8078
+    },
+    "address": "Miramar Residency, Panaji, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-011",
+    "name": "Colva Residency",
+    "type": "hotel",
+    "region": "South Goa",
+    "area": "Colva",
+    "coordinates": {
+      "lat": 15.2789,
+      "lng": 73.9156
+    },
+    "address": "Colva Residency, Colva, South Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-DINE-001",
+    "name": "Calamari Bathe & Binge",
+    "type": "restaurant",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5122,
+      "lng": 73.7622
+    },
+    "address": "Dando Beach, Candolim, Goa 403515",
+    "tags": [
+      "food",
+      "seafood",
+      "beach shack",
+      "cocktails",
+      "live music"
+    ],
+    "categories": [
+      "restaurants",
+      "beach_shacks",
+      "food"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.2
+    },
+    "best_time": [
+      "lunch",
+      "dinner",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.5,
+    "adventure_score": 0.2,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.6,
+    "food_score": 0.9,
+    "opening_hours": "11:00 - 23:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism / Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-DINE-002",
+    "name": "Fisherman's Wharf",
+    "type": "restaurant",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4956,
+      "lng": 73.8344
+    },
+    "address": "Campal, Panaji, Goa 403001",
+    "tags": [
+      "food",
+      "fine dining",
+      "goan fish curry",
+      "indoor",
+      "covered veranda"
+    ],
+    "categories": [
+      "restaurants",
+      "food",
+      "indoor"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "lunch",
+      "dinner"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 3,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.6,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.8,
+    "food_score": 0.95,
+    "opening_hours": "12:00 - 23:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-DINE-003",
+    "name": "Gunpowder",
+    "type": "restaurant",
+    "region": "North Goa",
+    "area": "Assagao",
+    "coordinates": {
+      "lat": 15.5925,
+      "lng": 73.7744
+    },
+    "address": "Saunto Vaddo, Assagao, Goa 403507",
+    "tags": [
+      "food",
+      "kerala cuisine",
+      "pandi curry",
+      "heritage villa",
+      "covered courtyard"
+    ],
+    "categories": [
+      "restaurants",
+      "food",
+      "covered"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 0.9
+    },
+    "best_time": [
+      "lunch",
+      "dinner"
+    ],
+    "estimated_duration_minutes": 80,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.2,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.8,
+    "food_score": 0.95,
+    "opening_hours": "12:00 - 15:30, 19:00 - 23:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-DINE-004",
+    "name": "Titlie Culinary Bar",
+    "type": "restaurant",
+    "region": "North Goa",
+    "area": "Vagator",
+    "coordinates": {
+      "lat": 15.6028,
+      "lng": 73.7336
+    },
+    "address": "Small Vagator Beach Road, Vagator, Goa 403509",
+    "tags": [
+      "cocktails",
+      "cliffside",
+      "sunset",
+      "global sharing plates"
+    ],
+    "categories": [
+      "restaurants",
+      "bars",
+      "sunset"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.2
+    },
+    "best_time": [
+      "evening",
+      "sunset",
+      "dinner"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 3,
+    "family_friendly": false,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.4,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.9,
+    "opening_hours": "13:00 - 01:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NIGHT-001",
+    "name": "SinQ Night Club & Showbar Exchange",
+    "type": "nightlife",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5136,
+      "lng": 73.7689
+    },
+    "address": "Aguada - Siolim Road, Candolim, Goa 403515",
+    "tags": [
+      "nightlife",
+      "dj club",
+      "air conditioned",
+      "poolside cabanas",
+      "rain safe"
+    ],
+    "categories": [
+      "nightlife",
+      "clubs",
+      "indoor"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "night"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 3,
+    "family_friendly": false,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.1,
+    "adventure_score": 0.7,
+    "relaxed_score": 0.3,
+    "cultural_score": 0.2,
+    "food_score": 0.6,
+    "opening_hours": "21:00 - 03:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NIGHT-002",
+    "name": "Anjuna Flea Market & Curlies",
+    "type": "nightlife",
+    "region": "North Goa",
+    "area": "Anjuna",
+    "coordinates": {
+      "lat": 15.5789,
+      "lng": 73.7422
+    },
+    "address": "South Anjuna Beach, Anjuna, Goa 403509",
+    "tags": [
+      "beach party",
+      "trance",
+      "sunset chill",
+      "bohemian"
+    ],
+    "categories": [
+      "nightlife",
+      "beach_clubs"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.1
+    },
+    "best_time": [
+      "evening",
+      "night"
+    ],
+    "estimated_duration_minutes": 150,
+    "price_level": 2,
+    "family_friendly": false,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.2,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.6,
+    "cultural_score": 0.5,
+    "food_score": 0.7,
+    "opening_hours": "08:30 - 03:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-EXP-001",
+    "name": "Fontainhas Latin Quarter Heritage Walk",
+    "type": "activity",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4958,
+      "lng": 73.8322
+    },
+    "address": "Fontainhas, Panaji, Goa 403001",
+    "tags": [
+      "heritage walk",
+      "portuguese houses",
+      "art cafes",
+      "covered bakeries"
+    ],
+    "categories": [
+      "activities",
+      "culture",
+      "heritage"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 0.85
+    },
+    "best_time": [
+      "morning",
+      "late afternoon"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.8,
+    "opening_hours": "Open all day",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism / Curated Local Guide",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-EXP-002",
+    "name": "Savoi Spice Plantation Experience",
+    "type": "activity",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.4419,
+      "lng": 74.0536
+    },
+    "address": "Savoi, Ponda, Goa 403401",
+    "tags": [
+      "spice plantation",
+      "covered pavilions",
+      "traditional buffet",
+      "botany"
+    ],
+    "categories": [
+      "activities",
+      "nature",
+      "food",
+      "covered"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "lunch"
+    ],
+    "estimated_duration_minutes": 150,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.4,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.9,
+    "food_score": 0.9,
+    "opening_hours": "09:30 - 16:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

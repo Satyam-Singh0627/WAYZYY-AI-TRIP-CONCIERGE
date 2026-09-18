@@ -1,0 +1,370 @@
+[
+  {
+    "id": "GOA-MUSEUM-001",
+    "name": "Houses of Goa Museum",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Porvorim",
+    "coordinates": {
+      "lat": 15.5267,
+      "lng": 73.8242
+    },
+    "address": "Houses of Goa Museum, Porvorim, North Goa, Goa",
+    "tags": [
+      "museum",
+      "architecture",
+      "ship shaped",
+      "gerard da cunha",
+      "rain safe"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-002",
+    "name": "Goa Chitra Museum",
+    "type": "museum",
+    "region": "South Goa",
+    "area": "Benaulim",
+    "coordinates": {
+      "lat": 15.2636,
+      "lng": 73.9311
+    },
+    "address": "Goa Chitra Museum, Benaulim, South Goa, Goa",
+    "tags": [
+      "museum",
+      "ethnographic",
+      "agrarian tools",
+      "organic farm"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-003",
+    "name": "Goa Science Centre",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Miramar",
+    "coordinates": {
+      "lat": 15.4767,
+      "lng": 73.8111
+    },
+    "address": "Goa Science Centre, Miramar, North Goa, Goa",
+    "tags": [
+      "museum",
+      "science",
+      "planetarium",
+      "kids friendly",
+      "indoor"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-004",
+    "name": "Dharohar (National Customs & GST Museum)",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4981,
+      "lng": 73.8306
+    },
+    "address": "Dharohar (National Customs & GST Museum), Panaji, North Goa, Goa",
+    "tags": [
+      "heritage",
+      "blue building",
+      "customs history",
+      "indoor"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-005",
+    "name": "Kala Academy",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4897,
+      "lng": 73.8189
+    },
+    "address": "Kala Academy, Panaji, North Goa, Goa",
+    "tags": [
+      "culture",
+      "theatre",
+      "art exhibitions",
+      "charles correa",
+      "covered"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-006",
+    "name": "Maquinez Palace",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4956,
+      "lng": 73.8258
+    },
+    "address": "Maquinez Palace, Panaji, North Goa, Goa",
+    "tags": [
+      "film heritage",
+      "iffi venue",
+      "art cinema",
+      "indoor"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-MUSEUM-007",
+    "name": "Mario Miranda Gallery & Art Cafe",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5167,
+      "lng": 73.7661
+    },
+    "address": "Mario Miranda Gallery & Art Cafe, Candolim, North Goa, Goa",
+    "tags": [
+      "art",
+      "souvenirs",
+      "cartoonist",
+      "indoor",
+      "cafe"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

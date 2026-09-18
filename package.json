@@ -1,0 +1,32 @@
+{
+  "name": "wayzyy-ai-trip-concierge",
+  "version": "1.0.0",
+  "description": "Post-booking AI Trip Concierge for Wayzyy (Book -> Plan -> Adapt -> Experience)",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "test": "node tests/test-suite.js",
+    "data:seed": "node scripts/seedGoaData.js",
+    "data:osm": "node scripts/importOverpassGoa.js",
+    "data:google": "node scripts/importGooglePlaces.js",
+    "data:normalize": "node scripts/normalizeGoaData.js",
+    "data:validate": "node scripts/validateGoaData.js",
+    "data:refresh": "node scripts/seedGoaData.js && node scripts/normalizeGoaData.js && node scripts/validateGoaData.js"
+  },
+  "keywords": [
+    "wayzyy",
+    "ai-concierge",
+    "travel-agent",
+    "hackathon",
+    "post-booking"
+  ],
+  "author": "Wayzyy Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

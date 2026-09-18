@@ -1,0 +1,76 @@
+{
+  "name": "Wayzyy - AI Itinerary Generator",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "wayzyy-booking-webhook",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "node-webhook-booking",
+      "name": "Booking Webhook Ingestion",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [180, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Validate booking payload fields\nconst item = items[0].json;\nif (!item.guest_name || !item.property || !item.trip || !item.trip.check_in || !item.trip.check_out) {\n  throw new Error('Invalid booking payload: Missing required fields');\n}\n\nreturn [{\n  json: {\n    booking_id: item.booking_id || `BK-${Date.now()}`,\n    guest_name: item.guest_name,\n    property: item.property,\n    trip: item.trip,\n    preferences: item.preferences || ['beach', 'food', 'nightlife'],\n    telegram_chat_id: item.telegram_chat_id || '123456789'\n  }\n}];"
+      },
+      "id": "node-code-validate",
+      "name": "Validate Booking & Context",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [380, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3000/api/places",
+        "options": {}
+      },
+      "id": "node-http-places",
+      "name": "Load Goa Curated Places",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [580, 300]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "prompt": "=You are Wayzyy's AI Trip Concierge.\nGuest: {{ $node[\"Validate Booking & Context\"].json[\"guest_name\"] }}\nProperty: {{ $node[\"Validate Booking & Context\"].json[\"property\"][\"name\"] }} in {{ $node[\"Validate Booking & Context\"].json[\"property\"][\"area\"] }}\nDates: {{ $node[\"Validate Booking & Context\"].json[\"trip\"][\"check_in\"] }} to {{ $node[\"Validate Booking & Context\"].json[\"trip\"][\"check_out\"] }}\n\nCurated Goa Places:\n{{ JSON.stringify($json[\"places\"]) }}\n\nGenerate a 4-day personalized itinerary in structured JSON using only verified places."
+      },
+      "id": "node-claude-itinerary",
+      "name": "Claude AI Itinerary Engine",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1,
+      "position": [780, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $node[\"Validate Booking & Context\"].json[\"telegram_chat_id\"] }}",
+        "text": "=🌴 Welcome to Goa, {{ $node[\"Validate Booking & Context\"].json[\"guest_name\"] }}!\nYour personalized Wayzyy trip itinerary is ready.\n\nAccommodation: {{ $node[\"Validate Booking & Context\"].json[\"property\"][\"name\"] }} ({{ $node[\"Validate Booking & Context\"].json[\"property\"][\"area\"] }})\n\nAsk me anything anytime about recommendations or weather updates!",
+        "additionalFields": {}
+      },
+      "id": "node-telegram-send",
+      "name": "Telegram Itinerary Delivery",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [980, 300]
+    }
+  ],
+  "connections": {
+    "Booking Webhook Ingestion": {
+      "main": [[{ "node": "Validate Booking & Context", "type": "main", "index": 0 }]]
+    },
+    "Validate Booking & Context": {
+      "main": [[{ "node": "Load Goa Curated Places", "type": "main", "index": 0 }]]
+    },
+    "Load Goa Curated Places": {
+      "main": [[{ "node": "Claude AI Itinerary Engine", "type": "main", "index": 0 }]]
+    },
+    "Claude AI Itinerary Engine": {
+      "main": [[{ "node": "Telegram Itinerary Delivery", "type": "main", "index": 0 }]]
+    }
+  }
+}

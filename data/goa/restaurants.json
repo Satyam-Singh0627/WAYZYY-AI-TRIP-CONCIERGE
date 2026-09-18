@@ -1,0 +1,207 @@
+[
+  {
+    "id": "GOA-DINE-001",
+    "name": "Calamari Bathe & Binge",
+    "type": "restaurant",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5122,
+      "lng": 73.7622
+    },
+    "address": "Dando Beach, Candolim, Goa 403515",
+    "tags": [
+      "food",
+      "seafood",
+      "beach shack",
+      "cocktails",
+      "live music"
+    ],
+    "categories": [
+      "restaurants",
+      "beach_shacks",
+      "food"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.2
+    },
+    "best_time": [
+      "lunch",
+      "dinner",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.5,
+    "adventure_score": 0.2,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.6,
+    "food_score": 0.9,
+    "opening_hours": "11:00 - 23:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism / Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-DINE-002",
+    "name": "Fisherman's Wharf",
+    "type": "restaurant",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4956,
+      "lng": 73.8344
+    },
+    "address": "Campal, Panaji, Goa 403001",
+    "tags": [
+      "food",
+      "fine dining",
+      "goan fish curry",
+      "indoor",
+      "covered veranda"
+    ],
+    "categories": [
+      "restaurants",
+      "food",
+      "indoor"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "lunch",
+      "dinner"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 3,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.6,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.8,
+    "food_score": 0.95,
+    "opening_hours": "12:00 - 23:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-DINE-003",
+    "name": "Gunpowder",
+    "type": "restaurant",
+    "region": "North Goa",
+    "area": "Assagao",
+    "coordinates": {
+      "lat": 15.5925,
+      "lng": 73.7744
+    },
+    "address": "Saunto Vaddo, Assagao, Goa 403507",
+    "tags": [
+      "food",
+      "kerala cuisine",
+      "pandi curry",
+      "heritage villa",
+      "covered courtyard"
+    ],
+    "categories": [
+      "restaurants",
+      "food",
+      "covered"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 0.9
+    },
+    "best_time": [
+      "lunch",
+      "dinner"
+    ],
+    "estimated_duration_minutes": 80,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.2,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.8,
+    "food_score": 0.95,
+    "opening_hours": "12:00 - 15:30, 19:00 - 23:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-DINE-004",
+    "name": "Titlie Culinary Bar",
+    "type": "restaurant",
+    "region": "North Goa",
+    "area": "Vagator",
+    "coordinates": {
+      "lat": 15.6028,
+      "lng": 73.7336
+    },
+    "address": "Small Vagator Beach Road, Vagator, Goa 403509",
+    "tags": [
+      "cocktails",
+      "cliffside",
+      "sunset",
+      "global sharing plates"
+    ],
+    "categories": [
+      "restaurants",
+      "bars",
+      "sunset"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.2
+    },
+    "best_time": [
+      "evening",
+      "sunset",
+      "dinner"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 3,
+    "family_friendly": false,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.4,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.9,
+    "opening_hours": "13:00 - 01:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

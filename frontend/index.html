@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAYZYY — Intelligent AI Travel Concierge</title>
+  <meta name="description" content="Your trip, intelligently looked after. WAYZYY turns your booking into an adaptive personalized travel experience for Goa stays.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Mobile Top Bar (375px-414px) -->
+  <header class="mobile-top-bar" id="mobileTopBar">
+    <div class="mobile-top-brand" data-route="/app/overview" style="cursor: pointer;">
+      <div class="mobile-top-brand-icon">W</div>
+      <span class="mobile-top-brand-name">WAYZYY</span>
+    </div>
+    <div class="mobile-top-status-badge" id="mobileTopStatusBadge">
+      CANDOLIM · DAY 2
+    </div>
+    <div class="mobile-top-actions">
+      <button type="button" class="mobile-top-notif-btn" id="mobileTopNotifBtn" data-route="/app/notifications" aria-label="Notifications">
+        <span>🔔</span>
+        <span class="mobile-top-notif-badge" id="mobileTopNotifDot">1</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Global Header -->
+  <header class="global-header">
+    <div class="header-inner">
+      <div class="brand-group" id="brandNavHome" role="button" tabindex="0">
+        <div class="brand-icon" aria-hidden="true">W</div>
+        <div>
+          <div class="brand-title">
+            WAYZYY
+            <span class="brand-badge">Travel Concierge</span>
+          </div>
+          <div class="brand-tagline">Goa · Book · Plan · Adapt · Experience</div>
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="global-nav" aria-label="Main Navigation">
+        <a class="nav-link" href="/" data-route="/">Home</a>
+        <a class="nav-link" href="/destinations" data-route="/destinations">Destinations</a>
+        <a class="nav-link" href="/features" data-route="/features">Features</a>
+        <a class="nav-link" href="/how-it-works" data-route="/how-it-works">How It Works</a>
+        <a class="nav-link" href="/app/overview" data-route="/app/overview">Trip Concierge</a>
+      </nav>
+
+      <div class="header-right">
+        <button type="button" class="btn-tutorial-trigger" id="btnOpenTutorial">
+          <span>💡</span> How WAYZYY Works
+        </button>
+        <button type="button" class="btn-cta-nav" id="btnNavStartTrip" data-route="/book">
+          START YOUR TRIP
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hackathon Guided Demo Bar for Judges -->
+  <aside class="demo-guide-bar" aria-label="Hackathon Guided Demo Controller">
+    <div class="demo-guide-inner">
+      <div class="demo-badge-label">
+        <span>⚡ JUDGE DEMO FLOW:</span>
+      </div>
+      <div class="demo-step-buttons">
+        <button type="button" class="demo-step-btn" id="demoStep1" data-step="1">1. Load Demo Trip</button>
+        <button type="button" class="demo-step-btn" id="demoStep2" data-step="2">2. Confirm Booking</button>
+        <button type="button" class="demo-step-btn" id="demoStep3" data-step="3">3. View Itinerary</button>
+        <button type="button" class="demo-step-btn" id="demoStep4" data-step="4">4. Ask Concierge</button>
+        <button type="button" class="demo-step-btn" id="demoStep5" data-step="5">5. Simulate Rain</button>
+        <button type="button" class="demo-step-btn" id="demoStep6" data-step="6">6. Watch Adaptation</button>
+        <button type="button" class="demo-step-btn" id="demoStep7" data-step="7">7. Re-ask Concierge</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Proactive Weather Alert Banner -->
+  <div class="proactive-alert-banner" id="proactiveAlertBanner" style="display: none;">
+    <div class="proactive-alert-inner">
+      <div class="alert-content">
+        <span class="alert-badge">WEATHER UPDATE</span>
+        <span id="alertBannerText">Rain expected tomorrow. We’ve proactively adjusted your beach plans and found an indoor alternative.</span>
+      </div>
+      <div class="alert-actions">
+        <button type="button" class="btn-alert-cta" id="btnAlertViewPlan">VIEW CHANGES</button>
+        <button type="button" class="btn-alert-cta" id="btnAlertAskConcierge" style="background-color: var(--color-olive);">ASK CONCIERGE</button>
+        <button type="button" class="btn-alert-close" id="btnDismissAlert" title="Dismiss" aria-label="Close">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN VIEW CONTAINER -->
+  <main id="mainAppContent">
+
+    <!-- ============================================================
+         VIEW 1: LANDING PAGE (/)
+         ============================================================ -->
+    <section class="view-container page-container" id="viewHome">
+      <!-- Cinematic Editorial Hero (Reference 1 & Reference 2) -->
+      <div class="cinematic-hero-wrap">
+        <img src="assets/goa_hero.jpg" alt="Cinematic Goa Beachfront Sunset" class="cinematic-hero-bg">
+        <div class="cinematic-hero-overlay"></div>
+        <div class="cinematic-hero-content">
+          <div class="hero-editorial-badge">AI TRIP CONCIERGE · GOA</div>
+          <h1 class="hero-title-editorial">
+            Your trip, <br><em>intelligently looked after.</em>
+          </h1>
+          <p class="hero-subtitle-editorial">
+            WAYZYY transforms your Goa villa booking into a living, personalized travel companion — planning your days, adapting dynamically to coastal weather, and remaining with you from arrival to departure.
+          </p>
+          <div class="hero-ctas">
+            <button type="button" class="btn-primary-lg" id="btnHeroStartTrip" data-route="/book">START YOUR TRIP</button>
+            <button type="button" class="btn-secondary-lg" id="btnHeroHowItWorks" data-route="/how-it-works">SEE HOW IT WORKS</button>
+          </div>
+
+          <!-- Floating Glass Cards (Editorial Discovery) -->
+          <div class="hero-floating-cards-row">
+            <div class="hero-floating-card">
+              <div class="floating-card-tag">NOW · 10:30 AM</div>
+              <div class="floating-card-title">Candolim Shoreline Walk</div>
+              <div class="floating-card-sub">29°C · Gentle Sea Breeze</div>
+            </div>
+            <div class="hero-floating-card">
+              <div class="floating-card-tag">UP NEXT · 4:30 PM</div>
+              <div class="floating-card-title">Fort Aguada Ramparts</div>
+              <div class="floating-card-sub">Golden Hour · 1.2 km away</div>
+            </div>
+            <div class="hero-floating-card alert-glow">
+              <div class="floating-card-tag" style="color: var(--color-orange-light);">WEATHER ADAPTATION</div>
+              <div class="floating-card-title">Autonomous Reroute</div>
+              <div class="floating-card-sub">Rain anticipated → Houses of Goa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-Card Advantage Grid (Reference 1 Editorial Structure) -->
+      <div class="hero-advantage-grid">
+        <div class="hero-advantage-card">
+          <div class="advantage-num">01</div>
+          <div class="advantage-title">Real-Time Weather Adaptation</div>
+          <p class="advantage-desc">Autonomous rescheduling moves outdoor activities to sheltered heritage spots before rain disrupts your holiday.</p>
+        </div>
+        <div class="hero-advantage-card">
+          <div class="advantage-num">02</div>
+          <div class="advantage-title">100% Verified Goa Places</div>
+          <p class="advantage-desc">Every venue is curated from verified local geography — Latin quarters, seaside shacks, and spice plantations.</p>
+        </div>
+        <div class="hero-advantage-card">
+          <div class="advantage-num">03</div>
+          <div class="advantage-title">Conversational Concierge</div>
+          <p class="advantage-desc">Speak naturally in plain English with multi-turn memory to uncover hidden culinary gems and secret viewpoints.</p>
+        </div>
+        <div class="hero-advantage-card">
+          <div class="advantage-num">04</div>
+          <div class="advantage-title">Zero-Overhead Integration</div>
+          <p class="advantage-desc">Directly ingests your villa reservation, check-in dates, and party size to build your 4-day plan instantly.</p>
+        </div>
+      </div>
+
+      <!-- Section 1: How WAYZYY Works (Book -> Plan -> Adapt -> Experience) -->
+      <section class="landing-section">
+        <div class="section-header">
+          <div class="section-eyebrow">THE EXPERIENCE</div>
+          <h2 class="section-title">How WAYZYY Works</h2>
+          <p class="section-desc">More than an AI chatbot. An intelligent companion that connects every phase of your journey.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-step">STEP 01</div>
+            <h3 class="pillar-title">BOOK</h3>
+            <p class="pillar-text">Your stay reservation arrives with guest preferences, property location, and travel dates.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-step">STEP 02</div>
+            <h3 class="pillar-title">PLAN</h3>
+            <p class="pillar-text">WAYZYY creates a date-aligned 4-slot daily itinerary strictly grounded in verified local places.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-step">STEP 03</div>
+            <h3 class="pillar-title">ADAPT</h3>
+            <p class="pillar-text">Live weather is monitored. When rain threatens outdoor beach time, sheltered alternatives are substituted automatically.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-step">STEP 04</div>
+            <h3 class="pillar-title">EXPERIENCE</h3>
+            <p class="pillar-text">Your personal concierge is on call 24/7 to answer questions, recommend hidden spots, and adjust schedules.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Why WAYZYY -->
+      <section class="landing-section">
+        <div class="section-header">
+          <div class="section-eyebrow">CORE ADVANTAGES</div>
+          <h2 class="section-title">Why WAYZYY</h2>
+          <p class="section-desc">Hospitality-grade travel technology built for seamless, stress-free journeys.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">🎯</div>
+            <h3 class="why-title">Personalized</h3>
+            <p class="why-desc">Tailored to your specific villa location in Candolim, pace, interests, and dining preferences.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">⛅</div>
+            <h3 class="why-title">Adaptive</h3>
+            <p class="why-desc">Constantly watches live weather forecasts to proactively prevent ruined outdoor excursions before they happen.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">💬</div>
+            <h3 class="why-title">Conversational</h3>
+            <p class="why-desc">Ask naturally in plain English with multi-turn memory. No rigid keywords or scripted non-answers.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Weather Adaptation Visual Flow -->
+      <section class="landing-section">
+        <div class="section-header">
+          <div class="section-eyebrow">AUTOMATED INTELLIGENCE</div>
+          <h2 class="section-title">Smart Weather Adaptation</h2>
+          <p class="section-desc">See how WAYZYY protects your holiday schedule when adverse weather strikes.</p>
+        </div>
+
+        <div class="adaptation-interactive-box">
+          <div class="adaptation-flow-row">
+            <div class="adapt-node sunny">
+              <div class="adapt-node-badge">1. Sunny Itinerary</div>
+              <div class="adapt-node-title">Candolim Beach & Water Sports</div>
+              <div class="adapt-node-desc">Scheduled outdoor swim & coastal parasailing on Day 2.</div>
+            </div>
+
+            <div class="adapt-arrow">→</div>
+
+            <div class="adapt-node rain">
+              <div class="adapt-node-badge">2. Rain Forecasted</div>
+              <div class="adapt-node-title">95% Rain Probability</div>
+              <div class="adapt-node-desc">Heavy showers & high winds detected during afternoon slot.</div>
+            </div>
+
+            <div class="adapt-arrow">→</div>
+
+            <div class="adapt-node change">
+              <div class="adapt-node-badge">3. Autonomous Adaptation</div>
+              <div class="adapt-node-title">Houses of Goa Museum</div>
+              <div class="adapt-node-desc">Itinerary changes to sheltered Portuguese architectural exploration; guest notified.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Destination Spotlight (Goa / Candolim) -->
+      <section class="landing-section">
+        <div class="destination-spotlight">
+          <div>
+            <div class="section-eyebrow">CURATED DESTINATION</div>
+            <h2 class="dest-title">Candolim & North Goa</h2>
+            <p class="dest-text">
+              Every recommendation in WAYZYY is grounded in verified, local Goa venues. From beachside shacks on Candolim shoreline to Latin heritage quarters in Panjim and cliffside sunset bars in Vagator.
+            </p>
+            <div class="dest-places-pills">
+              <span class="dest-pill">Candolim Beach</span>
+              <span class="dest-pill">Fort Aguada</span>
+              <span class="dest-pill">Houses of Goa</span>
+              <span class="dest-pill">Mario Miranda Gallery</span>
+              <span class="dest-pill">Reis Magos Fort</span>
+              <span class="dest-pill">Fontainhas Panjim</span>
+              <span class="dest-pill">Gunpowder Assagao</span>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <button type="button" class="btn-primary-lg" data-route="/book">PLAN YOUR GOA STAY</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Final CTA -->
+      <section class="final-cta-section">
+        <div class="cta-box">
+          <h2 class="cta-headline">Ready to experience intelligent travel?</h2>
+          <p class="cta-subtext">Start your trip with a demo booking and explore personalized itineraries, live weather, and concierge assistance.</p>
+          <button type="button" class="btn-primary-lg" data-route="/book">START YOUR TRIP NOW</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================================================
+         VIEW: DESTINATIONS (/destinations)
+         ============================================================ -->
+    <section class="view-container page-container" id="viewDestinations" style="display: none;">
+      <div class="destinations-hero">
+        <div class="hero-editorial-badge">CURATED DESTINATIONS</div>
+        <h1 class="hero-title-editorial">Goa Across Six Terrains</h1>
+        <p class="hero-subtitle-editorial">
+          From the golden sandy shores of Candolim to the Latin quarters of Fontainhas and tranquil spice hills of Sahyadri. Every region verified with real-time geospatial intelligence.
+        </p>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Region 1: North Goa Beaches & Forts -->
+        <div class="destination-card">
+          <img src="assets/goa_hero.jpg" alt="Candolim & North Goa Coastal" class="destination-card-img">
+          <div class="destination-card-body">
+            <span class="destination-tag">COASTAL · SUNSET · HERITAGE</span>
+            <h3 class="destination-title">Candolim & Sinquerim</h3>
+            <p class="destination-desc">
+              Wide golden sands, 17th-century ramparts of Fort Aguada, and legendary seaside dining like Calamari Bathe & Binge. The signature hub of WAYZYY.
+            </p>
+            <div class="destination-meta">
+              <span>📍 North Goa</span>
+              <span>🚗 40 min from Dabolim</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Region 2: Latin Heritage Fontainhas & Panaji -->
+        <div class="destination-card">
+          <img src="assets/goa_church.jpg" alt="Panaji Latin Quarter Fontainhas" class="destination-card-img">
+          <div class="destination-card-body">
+            <span class="destination-tag">HERITAGE · CULTURE · ARCHITECTURE</span>
+            <h3 class="destination-title">Panaji & Fontainhas</h3>
+            <p class="destination-desc">
+              Vibrant Portuguese colonial mansions, azulejo ceramic tiles, heritage bakeries, and the iconic Our Lady of Immaculate Conception Church.
+            </p>
+            <div class="destination-meta">
+              <span>📍 Central Goa</span>
+              <span>🎨 Latin Quarter Heritage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Region 3: Assagao & Vagator -->
+        <div class="destination-card">
+          <div style="height: 200px; background: linear-gradient(135deg, #2b2621 0%, #171614 100%); display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            🌿
+          </div>
+          <div class="destination-card-body">
+            <span class="destination-tag">CULINARY · BOUTIQUE · CLIFFSIDE</span>
+            <h3 class="destination-title">Assagao & Vagator</h3>
+            <p class="destination-desc">
+              The culinary capital of Goa. Shaded jungle villas, bespoke botanical cocktail bars, Gunpowder restaurant, and red clay cliffs overlooking the sea.
+            </p>
+            <div class="destination-meta">
+              <span>📍 North Goa</span>
+              <span>🍽️ Fine Dining Hub</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Region 4: Old Goa (Velha Goa) -->
+        <div class="destination-card">
+          <div style="height: 200px; background: linear-gradient(135deg, #1f2024 0%, #171614 100%); display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            🏛️
+          </div>
+          <div class="destination-card-body">
+            <span class="destination-tag">UNESCO · SACRED · MONUMENTAL</span>
+            <h3 class="destination-title">Old Goa (Velha Goa)</h3>
+            <p class="destination-desc">
+              UNESCO World Heritage sanctuaries including Basilica of Bom Jesus, Se Cathedral, and the Church of St. Francis of Assisi dating back to 1605.
+            </p>
+            <div class="destination-meta">
+              <span>📍 Central Goa</span>
+              <span>📜 World Heritage Site</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Region 5: South Goa & Palolem -->
+        <div class="destination-card">
+          <div style="height: 200px; background: linear-gradient(135deg, #1d2524 0%, #171614 100%); display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            🐬
+          </div>
+          <div class="destination-card-body">
+            <span class="destination-tag">TRANQUILITY · NATURE · WELLNESS</span>
+            <h3 class="destination-title">Palolem & Agonda</h3>
+            <p class="destination-desc">
+              Curved crescent bays fringed with coconut palms, gentle turquoise surf, silent noise parties, dolphin excursions, and unhurried coastal retreats.
+            </p>
+            <div class="destination-meta">
+              <span>📍 South Goa</span>
+              <span>🧘 Serene & Uncrowded</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Region 6: Sahyadri Hinterland -->
+        <div class="destination-card">
+          <div style="height: 200px; background: linear-gradient(135deg, #24221a 0%, #171614 100%); display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            🏞️
+          </div>
+          <div class="destination-card-body">
+            <span class="destination-tag">WATERFALLS · SPICE HILLS · ADVENTURE</span>
+            <h3 class="destination-title">Sahyadri Hinterland</h3>
+            <p class="destination-desc">
+              Lush Western Ghats rainforest canopy, organic Sahakari spice plantations, river kayaking, and the thunderous multi-tiered Dudhsagar Falls.
+            </p>
+            <div class="destination-meta">
+              <span>📍 East Goa</span>
+              <span>🌿 Eco-Sanctuary</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin: 48px 0 24px;">
+        <button type="button" class="btn-primary-lg" data-route="/book" style="padding: 14px 32px; font-size: 14px;">
+          START YOUR TRIP WITH WAYZYY
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VIEW 2: FEATURES PAGE (/features)
+         ============================================================ -->
+    <section class="view-container page-container" id="viewFeatures">
+      <div class="section-header">
+        <div class="section-eyebrow">PRODUCT CAPABILITIES</div>
+        <h1 class="section-title">Built for Modern Hospitality</h1>
+        <p class="section-desc">Explore the 8 core intelligent pillars that power the WAYZYY Travel Concierge platform.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-detailed-card">
+          <div class="feature-top">
+            <div class="feature-category-badge">Itinerary Engine</div>
+            <h3 class="feature-name">Personalized Itinerary</h3>
+            <p class="feature-desc">4-slot daily schedules (Morning, Lunch, Evening, Dinner) customized to guest vibe, pace, and arrival dates.</p>
+            <div class="feature-benefit-box">
+              <strong>Guest Benefit:</strong> A balanced, stress-free plan without spending hours researching.
+            </div>
+          </div>
+          <div class="feature-how-box">
+            <strong>How it works:</strong> Multi-factor scoring maps verified local places to guest interest tags and travel pace.
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-detailed-card">
+          <div class="feature-top">
+            <div class="feature-category-badge">Conversational AI</div>
+            <h3 class="feature-name">AI Concierge</h3>
+            <p class="feature-desc">Natural plain-English travel concierge answering questions, tweaking plans, and recommending hidden local gems.</p>
+            <div class="feature-benefit-box">
+              <strong>Guest Benefit:</strong> Instant local advice right when you need it, 24/7.
+            </div>
+          </div>
+          <div class="feature-how-box">
+            <strong>How it works:</strong> Multi-intent classification with strict grounding in the Goa dataset and Anthropic Claude integration.
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-detailed-card">
+          <div class="feature-top">
+            <div class="feature-category-badge">Live Weather Intelligence</div>
+            <h3 class="feature-name">Live Weather & Forecasting</h3>
+            <p class="feature-desc">24-hour hourly precipitation curves and 5-day forecasts for North Goa with automatic rain probability tracking.</p>
+            <div class="feature-benefit-box">
+              <strong>Guest Benefit:</strong> Never get caught unprepared in sudden coastal squalls.
+            </div>
+          </div>
+          <div class="feature-how-box">
+            <strong>How it works:</strong> OpenWeatherMap integration with 10-minute caching and deterministic demo fallback.
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-detailed-card">
+          <div class="feature-top">
+            <div class="feature-category-badge">Autonomous Execution</div>
+            <h3 class="feature-name">Smart Weather Adaptation</h3>
+            <p class="feature-desc">Detects conflicts between outdoor activities and rainfall, automatically substituting sheltered cultural venues.</p>
+            <div class="feature-benefit-box">
+              <strong>Guest Benefit:</strong> Your day is saved automatically without scrambling for indoor alternatives.
+            </div>
+          </div>
+          <div class="feature-how-box">
+            <strong>How it works:</strong> Scans schedule for outdoor tags, matches proximity-ranked indoor alternatives, and updates store.
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-detailed-card">
+          <div class="feature-top">
+            <div class="feature-category-badge">Communications</div>
+            <h3 class="feature-name">Proactive Notifications</h3>
+            <p class="feature-desc">Human-friendly alerts sent before disruptions occur, with actionable buttons to view changes or ask the concierge.</p>
+            <div class="feature-benefit-box">
+              <strong>Guest Benefit:</strong> Stay informed without constantly checking weather apps.
+            </div>
+          </div>
+          <div class="feature-how-box">
+            <strong>How it works:</strong> Syncs across in-app notification center and simulated Telegram bot delivery.
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-detailed-card">
+          <div class="feature-top">
+            <div class="feature-category-badge">Reservation Integration</div>
+            <h3 class="feature-name">Booking Context Ingestion</h3>
+            <p class="feature-desc">Inherits property address, check-in dates, guest count, and party profile directly upon confirmation.</p>
+            <div class="feature-benefit-box">
+              <strong>Guest Benefit:</strong> No repetitive forms or setting up preferences from scratch.
+            </div>
+          </div>
+          <div class="feature-how-box">
+            <strong>How it works:</strong> Canonical booking object validated and isolated with guest session tokens.
+          </div>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="feature-detailed-card">
+          <div class="feature-top">
+            <div class="feature-category-badge">Knowledge Base</div>
+            <h3 class="feature-name">Curated Local Experiences</h3>
+            <p class="feature-desc">100% verified Goa venues covering Latin quarters, seaside shacks, clifftop lounges, and spice plantations.</p>
+            <div class="feature-benefit-box">
+              <strong>Guest Benefit:</strong> Authentic experiences free from hallucinated or non-existent tourist traps.
+            </div>
+          </div>
+          <div class="feature-how-box">
+            <strong>How it works:</strong> Curated JSON/CSV data layer with distance metrics, indoor/outdoor tags, and suitability rules.
+          </div>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="feature-detailed-card">
+          <div class="feature-top">
+            <div class="feature-category-badge">Memory & State</div>
+            <h3 class="feature-name">Trip Memory & Multi-turn Context</h3>
+            <p class="feature-desc">Remembers prior conversation constraints (such as avoiding crowds or wanting quiet dinners) across multiple queries.</p>
+            <div class="feature-benefit-box">
+              <strong>Guest Benefit:</strong> Natural dialogue that feels like talking to a real human concierge.
+            </div>
+          </div>
+          <div class="feature-how-box">
+            <strong>How it works:</strong> Session memory maintains guest constraints and conversation history per booking ID.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VIEW 3: HOW IT WORKS (/how-it-works)
+         ============================================================ -->
+    <section class="view-container page-container" id="viewHowItWorks">
+      <div class="section-header">
+        <div class="section-eyebrow">STEP-BY-STEP JOURNEY</div>
+        <h1 class="section-title">The Complete Guest Journey</h1>
+        <p class="section-desc">From reservation confirmation to departure, see how WAYZYY stays with you every step of the way.</p>
+      </div>
+
+      <div class="journey-timeline">
+        <div class="journey-step-card">
+          <div class="journey-step-badge">STEP 1 <span>RESERVATION</span></div>
+          <div>
+            <h3 class="journey-step-title">BOOK — Guest Booking Arrives</h3>
+            <p class="journey-step-desc">A confirmed reservation for Casa Candolim Luxury Villa is received with travel dates, guest party size, and initial preferences.</p>
+          </div>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="journey-step-badge">STEP 2 <span>ANALYSIS</span></div>
+          <div>
+            <h3 class="journey-step-title">UNDERSTAND — Trip Context Established</h3>
+            <p class="journey-step-desc">WAYZYY analyzes destination geography (Candolim), party type, pace (relaxed), and interest tags (beaches, dining, heritage).</p>
+          </div>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="journey-step-badge">STEP 3 <span>CURATION</span></div>
+          <div>
+            <h3 class="journey-step-title">PLAN — Personalized Itinerary Generated</h3>
+            <p class="journey-step-desc">A date-aligned 4-day schedule is assembled with 4 slots per day (Morning, Lunch, Evening, Dinner), grounded in the curated Goa knowledge base.</p>
+          </div>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="journey-step-badge">STEP 4 <span>SURVEILLANCE</span></div>
+          <div>
+            <h3 class="journey-step-title">MONITOR — Live Weather & Forecasts Checked</h3>
+            <p class="journey-step-desc">Real-time weather APIs and hourly forecasts in North Goa are monitored continuously for upcoming rain risks.</p>
+          </div>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="journey-step-badge">STEP 5 <span>ADAPTATION</span></div>
+          <div>
+            <h3 class="journey-step-title">ADAPT — Conflict Detected & Resolved</h3>
+            <p class="journey-step-desc">When 95% rain risk threatens Day 2 beach time, WAYZYY proactively swaps in a sheltered cultural experience (Houses of Goa Museum) and alerts the guest.</p>
+          </div>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="journey-step-badge">STEP 6 <span>DIALOGUE</span></div>
+          <div>
+            <h3 class="journey-step-title">CONCIERGE — Natural Conversation</h3>
+            <p class="journey-step-desc">The guest asks "What can I do instead?" or "Where should we eat tonight?" The concierge answers with contextual memory and interactive action chips.</p>
+          </div>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="journey-step-badge">STEP 7 <span>HOSPITALITY</span></div>
+          <div>
+            <h3 class="journey-step-title">EXPERIENCE — Effortless Travel</h3>
+            <p class="journey-step-desc">The guest enjoys a smooth, memorable holiday with local recommendations, seamless adjustments, and peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VIEW 4: BOOKING RESERVATION (/book)
+         ============================================================ -->
+    <section class="view-container page-container" id="viewBook">
+      <div class="booking-page-layout">
+        <div class="booking-form-card">
+          <div class="booking-form-header">
+            <div>
+              <div class="hero-eyebrow">CONFIRM YOUR STAY</div>
+              <h2 class="section-title" style="font-size: 26px; margin-bottom: 4px;">Activate Your Concierge</h2>
+              <p class="section-desc" style="font-size: 14px;">Enter your booking details to personalize your Goa itinerary.</p>
+            </div>
+            <button type="button" class="btn-secondary-lg" id="btnPrefillDemo" style="padding: 8px 16px; font-size: 13px;">
+              ⚡ Load Demo Trip
+            </button>
+          </div>
+
+          <form id="mainBookingForm">
+            <div class="form-group">
+              <label for="bookGuestName">Guest Full Name</label>
+              <input type="text" id="bookGuestName" name="guest_name" value="Rahul Sharma" required placeholder="e.g. Rahul Sharma">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookPropertyName">Property / Villa</label>
+                <input type="text" id="bookPropertyName" name="property_name" value="Casa Candolim Luxury Villa" required>
+              </div>
+              <div class="form-group">
+                <label for="bookPropertyArea">Destination Area</label>
+                <select id="bookPropertyArea" name="property_area">
+                  <option value="Candolim" selected>Candolim (North Goa)</option>
+                  <option value="Calangute">Calangute</option>
+                  <option value="Baga">Baga</option>
+                  <option value="Anjuna">Anjuna</option>
+                  <option value="Vagator">Vagator</option>
+                  <option value="Assagao">Assagao</option>
+                  <option value="Panjim">Panjim</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookCheckIn">Check-in Date</label>
+                <input type="date" id="bookCheckIn" name="check_in" value="2026-10-15" required>
+              </div>
+              <div class="form-group">
+                <label for="bookCheckOut">Check-out Date</label>
+                <input type="date" id="bookCheckOut" name="check_out" value="2026-10-19" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookGuestCount">Number of Guests</label>
+                <input type="number" id="bookGuestCount" name="guest_count" value="2" min="1" max="20" required>
+              </div>
+              <div class="form-group">
+                <label for="bookPace">Travel Pace</label>
+                <select id="bookPace" name="pace">
+                  <option value="relaxed" selected>Relaxed (Unhurried & Peaceful)</option>
+                  <option value="moderate">Moderate (Balanced)</option>
+                  <option value="active">Active (Full Day Sightseeing)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Guest Interests & Vibes</label>
+              <div class="tag-selector">
+                <label class="tag-check"><input type="checkbox" name="vibe" value="beach" checked> Coastal Beaches</label>
+                <label class="tag-check"><input type="checkbox" name="vibe" value="food" checked> Goan Dining</label>
+                <label class="tag-check"><input type="checkbox" name="vibe" value="nightlife" checked> Nightlife & Lounges</label>
+                <label class="tag-check"><input type="checkbox" name="vibe" value="heritage"> Portuguese Heritage</label>
+                <label class="tag-check"><input type="checkbox" name="vibe" value="relaxed" checked> Relaxed Pace</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary-lg" id="btnSubmitBooking" style="width: 100%; margin-top: 12px;">
+              CONFIRM BOOKING & START CONCIERGE
+            </button>
+          </form>
+
+          <!-- Step-by-Step Progress Animation -->
+          <div class="automation-progress-box" id="bookingProgressBox">
+            <div class="progress-title">WAYZYY IS LOOKING AFTER YOUR TRIP...</div>
+            <div class="progress-steps">
+              <div class="progress-step-item" id="pstep1"><span>○</span> 1. Booking confirmed & context validated</div>
+              <div class="progress-step-item" id="pstep2"><span>○</span> 2. Trip preferences understood</div>
+              <div class="progress-step-item" id="pstep3"><span>○</span> 3. Curated Goa places selected</div>
+              <div class="progress-step-item" id="pstep4"><span>○</span> 4. 4-day itinerary generated & grounded</div>
+              <div class="progress-step-item" id="pstep5"><span>○</span> 5. Concierge ready</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VIEW 5: REAL APP HUB (/app/*)
+         ============================================================ -->
+    <section class="view-container page-container" id="viewApp">
+      <div class="app-layout">
+        
+        <!-- App Sidebar Navigation -->
+        <aside class="app-sidebar" aria-label="Trip Concierge Sidebar">
+          <!-- Active Trip Context Card -->
+          <div class="trip-context-card">
+            <div class="trip-context-eyebrow">ACTIVE STAY</div>
+            <h2 class="trip-context-property" id="sidePropName">Casa Candolim Luxury Villa</h2>
+            <div class="trip-context-meta">
+              <div id="sidePropArea">📍 Candolim, Goa</div>
+              <div id="sideTripDates">🗓 15–19 Oct 2026 (4 Nights)</div>
+              <div id="sideGuestCount">👤 Rahul Sharma · 2 Guests</div>
+            </div>
+            <div class="trip-status-pills">
+              <span class="status-pill booked">BOOKED</span>
+              <span class="status-pill planned">PLANNED</span>
+              <span class="status-pill ready">READY</span>
+            </div>
+          </div>
+
+          <!-- App Navigation Menu -->
+          <nav class="app-nav-menu" aria-label="App Sub Navigation">
+            <button type="button" class="app-menu-item active" data-sub="overview">
+              <span class="app-menu-icon">🏠</span>
+              <span class="app-menu-text">Overview</span>
+            </button>
+            <button type="button" class="app-menu-item" data-sub="itinerary">
+              <span class="app-menu-icon">🗓</span>
+              <span class="app-menu-text">Itinerary</span>
+            </button>
+            <button type="button" class="app-menu-item" data-sub="explore">
+              <span class="app-menu-icon">🧭</span>
+              <span class="app-menu-text">Explore</span>
+            </button>
+            <button type="button" class="app-menu-item" data-sub="concierge">
+              <span class="app-menu-icon">💬</span>
+              <span class="app-menu-text">Concierge</span>
+              <span class="menu-badge" id="menuChatBadge" style="display: none;">1</span>
+            </button>
+            <button type="button" class="app-menu-item" data-sub="weather">
+              <span class="app-menu-icon">⛅</span>
+              <span class="app-menu-text">Weather & Risk</span>
+            </button>
+            <button type="button" class="app-menu-item" data-sub="notifications">
+              <span class="app-menu-icon">🔔</span>
+              <span class="app-menu-text">Notifications</span>
+              <span class="menu-badge" id="menuNotifBadge">1</span>
+            </button>
+            <button type="button" class="app-menu-item" data-sub="settings">
+              <span class="app-menu-icon">⚙️</span>
+              <span class="app-menu-text">Trip Settings</span>
+            </button>
+          </nav>
+
+          <!-- Weather Quick Box in Sidebar -->
+          <div class="trip-context-card" style="padding: 16px;">
+            <div class="trip-context-eyebrow">CONDITIONS</div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
+              <div>
+                <strong id="sideWeatherTemp">29°C</strong>
+                <div style="font-size: 11px; color: var(--text-muted);" id="sideWeatherCond">Clear Skies</div>
+              </div>
+              <div style="font-size: 24px;" id="sideWeatherIcon">☀️</div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- App Main Content Area -->
+        <div class="app-main-content">
+
+          <!-- --------------------------------------------------------
+               SUB-VIEW: APP OVERVIEW (/app/overview)
+               -------------------------------------------------------- -->
+          <div class="app-subview active" id="subViewOverview">
+            <div class="overview-welcome-card">
+              <div>
+                <div class="hero-eyebrow">WELCOME BACK</div>
+                <h1 class="welcome-guest-title" id="ovGuestTitle">Rahul Sharma</h1>
+                <div class="welcome-stay-details" id="ovStayDetails">
+                  Casa Candolim Luxury Villa · 15–19 October 2026 · 2 Guests
+                </div>
+              </div>
+              <div>
+                <button type="button" class="btn-primary-lg" id="btnOvOpenItinerary" style="padding: 10px 20px; font-size: 13px;">
+                  VIEW ITINERARY
+                </button>
+              </div>
+            </div>
+
+            <!-- Mobile Quick Actions Strip -->
+            <div class="quick-actions-row">
+              <button type="button" class="quick-act-btn" data-mob-act="near_me">
+                <span class="quick-act-icon">📍</span>
+                <span class="quick-act-label">Near Me</span>
+              </button>
+              <button type="button" class="quick-act-btn" data-mob-act="weather">
+                <span class="quick-act-icon">⛅</span>
+                <span class="quick-act-label">Weather</span>
+              </button>
+              <button type="button" class="quick-act-btn" data-mob-act="today">
+                <span class="quick-act-icon">🗓️</span>
+                <span class="quick-act-label">Today</span>
+              </button>
+              <button type="button" class="quick-act-btn" data-mob-act="food">
+                <span class="quick-act-icon">🍽️</span>
+                <span class="quick-act-label">Food</span>
+              </button>
+              <button type="button" class="quick-act-btn" data-mob-act="explore">
+                <span class="quick-act-icon">🧭</span>
+                <span class="quick-act-label">Explore</span>
+              </button>
+              <button type="button" class="quick-act-btn" data-mob-act="ask_ai">
+                <span class="quick-act-icon">💬</span>
+                <span class="quick-act-label">Ask AI</span>
+              </button>
+            </div>
+
+            <!-- Next Activity Hero Card (Travel Companion Mobile Focus) -->
+            <div class="next-hero-card" id="ovNextHeroCard">
+              <div class="next-hero-top">
+                <span class="next-hero-badge">UP NEXT IN 25 MIN</span>
+                <span class="next-hero-time">16:30</span>
+              </div>
+              <h2 class="next-hero-title" id="ovNextHeroTitle">Fort Aguada & Lighthouse Ramparts</h2>
+              <div class="next-hero-meta" id="ovNextHeroMeta">
+                <span>📍 Candolim</span>
+                <span>🚗 1.2 km (4 min drive)</span>
+                <span class="tag-pill" style="background: rgba(255,106,0,0.15); color: var(--color-orange-light);">Heritage Walk · Golden Hour</span>
+              </div>
+              <div class="next-hero-actions">
+                <a href="https://maps.google.com/?q=Fort+Aguada+Goa" target="_blank" rel="noopener" class="next-hero-btn-primary" id="ovNextHeroBtnDirections">
+                  <span>↗</span> Directions
+                </a>
+                <button type="button" class="next-hero-btn-secondary" id="ovNextHeroBtnDetails">
+                  View in Plan
+                </button>
+                <button type="button" class="next-hero-btn-secondary" id="ovNextHeroBtnReplace">
+                  Replace
+                </button>
+              </div>
+            </div>
+
+            <!-- WAYZYY SAYS Insight Card -->
+            <div class="wayzyy-says-banner">
+              <div class="wayzyy-says-icon">💡</div>
+              <div class="wayzyy-says-content">
+                <strong>WAYZYY SAYS:</strong>
+                <span id="wayzyySaysText">High tide at Candolim Beach starts at 15:45. Head to Fort Aguada first for optimal sunset views, then hit Calamari Beach Shack for seaside dinner.</span>
+              </div>
+            </div>
+
+            <!-- NEAR YOU Horizontal Scroll-Snap Carousel -->
+            <div class="near-you-section">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <h3 style="font-size: 14px; font-weight: 700; color: var(--text-primary); margin: 0;">
+                  <span>📍</span> NEAR YOU (CANDOLIM)
+                </h3>
+                <span style="font-size: 11px; color: var(--color-orange); cursor: pointer;" id="btnViewAllNear">View all →</span>
+              </div>
+              <div class="scroll-snap-carousel" id="nearYouCarousel">
+                <div class="carousel-card" data-place="Calamari Bathe & Binge">
+                  <div class="carousel-card-tag">SEAFOOD DINING</div>
+                  <div class="carousel-card-title">Calamari Bathe & Binge</div>
+                  <div class="carousel-card-meta">📍 450 m · On the sand</div>
+                </div>
+                <div class="carousel-card" data-place="Sinquerim Beach">
+                  <div class="carousel-card-tag">COASTAL / SURF</div>
+                  <div class="carousel-card-title">Sinquerim Beach</div>
+                  <div class="carousel-card-meta">📍 900 m · Water sports</div>
+                </div>
+                <div class="carousel-card" data-place="Houses of Goa Museum">
+                  <div class="carousel-card-tag">INDOOR HERITAGE</div>
+                  <div class="carousel-card-title">Houses of Goa Museum</div>
+                  <div class="carousel-card-meta">📍 4.2 km · Portuguese craft</div>
+                </div>
+                <div class="carousel-card" data-place="Cohiba Lounge">
+                  <div class="carousel-card-tag">EVENING LOUNGE</div>
+                  <div class="carousel-card-title">Cohiba Bar & Kitchen</div>
+                  <div class="carousel-card-meta">📍 1.5 km · Live music</div>
+                </div>
+                <div class="carousel-card" data-place="Fisherman's Cove">
+                  <div class="carousel-card-tag">LOCAL GOAN</div>
+                  <div class="carousel-card-title">Fisherman's Cove</div>
+                  <div class="carousel-card-meta">📍 600 m · Kingfish curry</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Quick Prompt Bar -->
+            <div class="mobile-ask-bar" id="mobileQuickAskBar">
+              <input type="text" id="mobileQuickAskInput" placeholder="Ask WAYZYY anything about your trip..." autocomplete="off">
+              <button type="button" id="btnMobileQuickAsk">Ask</button>
+            </div>
+
+            <!-- Balanced 2-Column Responsive Grid -->
+            <div class="overview-grid">
+              
+              <!-- Left Column: Today's Plan & Next Activity -->
+              <div style="display: flex; flex-direction: column; gap: 24px;">
+                <div class="overview-card">
+                  <div class="overview-card-header">
+                    <h3 class="overview-card-title"><span>🗓</span> Today's Plan (Day 1)</h3>
+                    <span style="font-size: 12px; color: var(--text-muted);">15 Oct 2026</span>
+                  </div>
+
+                  <div class="overview-plan-list" id="ovTodayPlanList">
+                    <div class="overview-plan-item">
+                      <div class="plan-item-time">10:30</div>
+                      <div>
+                        <div class="plan-item-title">Candolim Beach & Shoreline Walk</div>
+                        <div class="plan-item-sub">Right outside your villa · Morning gentle swim</div>
+                      </div>
+                    </div>
+                    <div class="overview-plan-item">
+                      <div class="plan-item-time">13:00</div>
+                      <div>
+                        <div class="plan-item-title">Calamari Bathe & Binge</div>
+                        <div class="plan-item-sub">Seafood lunch on the sand with cold King's beer</div>
+                      </div>
+                    </div>
+                    <div class="overview-plan-item">
+                      <div class="plan-item-time">16:30</div>
+                      <div>
+                        <div class="plan-item-title">Fort Aguada & Lighthouse</div>
+                        <div class="plan-item-sub">17th-century ramparts at golden hour</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Upcoming Adaptation Preview Card -->
+                <div class="overview-card" id="ovAdaptationAlertCard" style="display: none; border-left: 4px solid var(--color-terracotta);">
+                  <div class="overview-card-header">
+                    <h3 class="overview-card-title" style="color: var(--color-terracotta);"><span>🌧</span> Weather Adaptation Active</h3>
+                    <button type="button" class="btn-secondary-lg" id="btnOvViewAdaptation" style="padding: 4px 10px; font-size: 11px;">View Day 2</button>
+                  </div>
+                  <p style="font-size: 13.5px; color: var(--text-secondary);" id="ovAdaptationText">
+                    Rain forecasted tomorrow. Outdoor beach activity was moved to <strong>Houses of Goa Museum</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right Column: Weather & Concierge Shortcut -->
+              <div style="display: flex; flex-direction: column; gap: 24px;">
+                <!-- Weather Widget -->
+                <div class="overview-card">
+                  <div class="overview-card-header">
+                    <h3 class="overview-card-title"><span>⛅</span> Candolim Weather</h3>
+                    <button type="button" class="btn-secondary-lg" id="btnOvOpenWeather" style="padding: 4px 10px; font-size: 11px;">Full Forecast</button>
+                  </div>
+
+                  <div class="weather-widget-compact">
+                    <div class="weather-widget-main">
+                      <div class="weather-widget-icon" id="ovWeatherIcon">☀️</div>
+                      <div>
+                        <div class="weather-widget-temp" id="ovWeatherTemp">29°C</div>
+                        <div class="weather-widget-condition" id="ovWeatherCond">Clear Skies</div>
+                      </div>
+                    </div>
+                    <div class="weather-widget-risk">
+                      <div>Rain Risk</div>
+                      <strong id="ovRainRisk">5%</strong>
+                    </div>
+                  </div>
+                  <div style="font-size: 12px; color: var(--text-muted);">
+                    Forecast for tomorrow: <span id="ovTomorrowBrief">Warm and clear</span>
+                  </div>
+                </div>
+
+                <!-- Concierge Shortcut Card -->
+                <div class="overview-card">
+                  <div class="overview-card-header">
+                    <h3 class="overview-card-title"><span>💬</span> Concierge on Call</h3>
+                    <span style="font-size: 11px; color: var(--color-olive); font-weight: 700;">● READY</span>
+                  </div>
+                  <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 14px;">
+                    Have questions about local dining, beach conditions, or need to tweak tomorrow's schedule?
+                  </p>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <button type="button" class="btn-secondary-lg ov-chip-shortcut" data-msg="What should I do tomorrow?">
+                      "What should I do tomorrow?"
+                    </button>
+                    <button type="button" class="btn-secondary-lg ov-chip-shortcut" data-msg="Where should we eat tonight?">
+                      "Where should we eat tonight?"
+                    </button>
+                    <button type="button" class="btn-primary-lg" id="btnOvOpenChat" style="padding: 10px; font-size: 13px; text-align: center;">
+                      OPEN CONCIERGE CHAT
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------
+               SUB-VIEW: ITINERARY (/app/itinerary)
+               -------------------------------------------------------- -->
+          <div class="app-subview" id="subViewItinerary" style="display: none;">
+            <div class="itinerary-page-header">
+              <div>
+                <h1 class="itinerary-main-title">Your Goa Itinerary</h1>
+                <p style="font-size: 14px; color: var(--text-secondary);">Built around your interests, villa location, and pace.</p>
+              </div>
+              <button type="button" class="btn-secondary-lg" id="btnItinAskConcierge">
+                💬 Ask Concierge to Adjust
+              </button>
+            </div>
+
+            <!-- Day Navigation -->
+            <div class="day-nav-bar" id="itinDayTabs">
+              <button type="button" class="day-nav-tab active" data-day="all">ALL DAYS</button>
+              <button type="button" class="day-nav-tab" data-day="1">DAY 1 (15 OCT)</button>
+              <button type="button" class="day-nav-tab" data-day="2">DAY 2 (16 OCT)</button>
+              <button type="button" class="day-nav-tab" data-day="3">DAY 3 (17 OCT)</button>
+              <button type="button" class="day-nav-tab" data-day="4">DAY 4 (18 OCT)</button>
+            </div>
+
+            <!-- Dynamic Itinerary Timeline Grid -->
+            <div class="itinerary-timeline-container" id="itinTimelineContainer"></div>
+          </div>
+
+          <!-- --------------------------------------------------------
+               SUB-VIEW: EXPLORE GOA DESTINATIONS (/app/explore)
+               -------------------------------------------------------- -->
+          <div class="app-subview" id="subViewExplore" style="display: none;">
+            <div class="itinerary-page-header">
+              <div>
+                <h1 class="itinerary-main-title">Explore Goa Destinations</h1>
+                <p style="font-size: 14px; color: var(--text-secondary);">Real-world destination intelligence with geospatial search, weather suitability, and official Goa Tourism listings.</p>
+              </div>
+              <button type="button" class="btn-secondary-lg btn-toggle-map" id="btnToggleMapModal" style="display: flex; align-items: center; gap: 8px;">
+                <span>🗺️</span> <span>Goa Map View</span>
+              </button>
+            </div>
+
+            <!-- Search & Filters Bar -->
+            <div class="overview-card" style="margin-bottom: 24px; padding: 20px;">
+              <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+                <input type="text" id="exploreSearchInput" placeholder="Search places, beaches, dining, heritage, or vibes (e.g. 'romantic near Candolim', 'indoor museum')..." style="flex: 1; padding: 12px 16px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-size: 14px; background: var(--bg-primary);">
+                <button type="button" class="btn-primary-lg" id="btnExploreSearch" style="padding: 0 24px; font-size: 14px;">Search</button>
+              </div>
+
+              <!-- Category Filter Chips -->
+              <div class="chat-quick-queries" id="exploreFilterChips" style="padding: 4px 0; border-top: none;">
+                <button type="button" class="quick-chip active" data-cat="all">All</button>
+                <button type="button" class="quick-chip" data-cat="near_me">📍 Near Me</button>
+                <button type="button" class="quick-chip" data-cat="beaches">Beaches</button>
+                <button type="button" class="quick-chip" data-cat="food">Food & Dining</button>
+                <button type="button" class="quick-chip" data-cat="culture">Culture & Heritage</button>
+                <button type="button" class="quick-chip" data-cat="nature">Nature & Waterfalls</button>
+                <button type="button" class="quick-chip" data-cat="nightlife">Nightlife</button>
+                <button type="button" class="quick-chip" data-cat="indoor">Indoor Rain-Safe</button>
+                <button type="button" class="quick-chip" data-cat="outdoor">Outdoor</button>
+                <button type="button" class="quick-chip" data-cat="family">Family</button>
+                <button type="button" class="quick-chip" data-cat="romantic">Romantic</button>
+                <button type="button" class="quick-chip" data-cat="relaxed">Relaxed</button>
+                <button type="button" class="quick-chip" data-cat="adventure">Adventure</button>
+              </div>
+            </div>
+
+            <!-- Active Search Results Count -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+              <span style="font-size: 13px; font-weight: 600; color: var(--text-secondary);" id="exploreResultsCount">Showing destinations</span>
+              <span style="font-size: 11px; color: var(--text-muted);">Source: Goa Tourism & OpenStreetMap</span>
+            </div>
+
+            <!-- Dynamic Places Grid -->
+            <div class="slots-grid" id="explorePlacesGrid" style="grid-template-columns: repeat(3, 1fr); gap: 20px;"></div>
+          </div>
+
+          <!-- --------------------------------------------------------
+               SUB-VIEW: CONCIERGE WORKSPACE (/app/concierge)
+               -------------------------------------------------------- -->
+          <div class="app-subview" id="subViewConcierge" style="display: none;">
+            <div class="concierge-workspace">
+              <!-- Left: Chat Panel -->
+              <div class="concierge-chat-panel">
+                <div class="overview-card-header" style="padding: 16px 24px; margin-bottom: 0;">
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <div class="brand-icon" style="width: 30px; height: 30px; font-size: 15px;">W</div>
+                    <div>
+                      <strong style="font-size: 14px;">WAYZYY AI CONCIERGE</strong>
+                      <div style="font-size: 11px; color: var(--text-muted);">Booking-Aware · Candolim Local Guide</div>
+                    </div>
+                  </div>
+                  <span class="status-pill ready">CONNECTED</span>
+                </div>
+
+                <!-- Quick Query Chips -->
+                <div class="chat-quick-queries">
+                  <span style="font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Suggested:</span>
+                  <button type="button" class="quick-chip" data-query="What should I do tomorrow?">What should I do tomorrow?</button>
+                  <button type="button" class="quick-chip" data-query="What if it rains tomorrow?">What if it rains tomorrow?</button>
+                  <button type="button" class="quick-chip" data-query="What's good near Candolim?">What's good near Candolim?</button>
+                  <button type="button" class="quick-chip" data-query="Can you make tomorrow more relaxed?">Make tomorrow more relaxed</button>
+                  <button type="button" class="quick-chip" data-query="Where should we eat tonight?">Where should we eat tonight?</button>
+                </div>
+
+                <!-- Messages Log -->
+                <div class="chat-messages-container" id="conciergeMessagesLog"></div>
+
+                <!-- Chat Input Bar -->
+                <form class="chat-input-bar" id="conciergeChatForm">
+                  <input type="text" id="conciergeChatInput" placeholder="Ask anything about your stay, weather, or plans in Goa..." autocomplete="off" required>
+                  <button type="submit" class="btn-send-chat" id="btnSendConciergeChat">Send</button>
+                </form>
+              </div>
+
+              <!-- Right: Trip Context & Memory Panel -->
+              <div class="concierge-context-panel">
+                <div class="context-box">
+                  <div class="context-box-title">BOOKING CONTEXT</div>
+                  <div style="font-size: 13px; line-height: 1.5; color: var(--text-secondary);">
+                    <div><strong>Guest:</strong> <span id="ctxBoxGuest">Rahul Sharma</span></div>
+                    <div><strong>Property:</strong> <span id="ctxBoxProp">Casa Candolim Villa</span></div>
+                    <div><strong>Area:</strong> Candolim, North Goa</div>
+                    <div><strong>Dates:</strong> 15–19 Oct 2026 (4 Nights)</div>
+                    <div><strong>Party:</strong> 2 Guests</div>
+                  </div>
+                </div>
+
+                <div class="context-box">
+                  <div class="context-box-title">CONVERSATION MEMORY</div>
+                  <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">
+                    Active constraints remembered across turns:
+                  </p>
+                  <div class="memory-chips-row" id="memoryChipsRow">
+                    <span class="memory-chip">🌿 Relaxed Pace</span>
+                    <span class="memory-chip">🌊 Coastal Beach Focus</span>
+                    <span class="memory-chip">🍴 Local Dining</span>
+                  </div>
+                </div>
+
+                <div class="context-box">
+                  <div class="context-box-title">QUICK CONCIERGE ACTIONS</div>
+                  <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <button type="button" class="btn-secondary-lg quick-action-trigger" data-action="replace_outdoor" style="padding: 7px 12px; font-size: 12px; text-align: left;">
+                      🌧 Replace Outdoor Beach Plan
+                    </button>
+                    <button type="button" class="btn-secondary-lg quick-action-trigger" data-action="make_relaxed" style="padding: 7px 12px; font-size: 12px; text-align: left;">
+                      🧘 Make Tomorrow More Relaxed
+                    </button>
+                    <button type="button" class="btn-secondary-lg quick-action-trigger" data-action="show_indoor" style="padding: 7px 12px; font-size: 12px; text-align: left;">
+                      🏛 Show Indoor Cultural Gems
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------
+               SUB-VIEW: WEATHER & RISK (/app/weather)
+               -------------------------------------------------------- -->
+          <div class="app-subview" id="subViewWeather" style="display: none;">
+            <div class="itinerary-page-header">
+              <div>
+                <h1 class="itinerary-main-title">Weather & Itinerary Conflict Analysis</h1>
+                <p style="font-size: 14px; color: var(--text-secondary);">Live weather monitoring for Candolim, North Goa, and automated activity risk detection.</p>
+              </div>
+              <div class="weather-control-buttons">
+                <button type="button" class="btn-weather-sim btn-sim-rain" id="btnWeatherSimRain">
+                  🌧 Simulate Rain Tomorrow
+                </button>
+                <button type="button" class="btn-weather-sim btn-sim-clear" id="btnWeatherSimClear">
+                  ☀️ Reset to Clear
+                </button>
+              </div>
+            </div>
+
+            <!-- Current Weather Card -->
+            <div class="weather-hero-card">
+              <div class="weather-hero-top">
+                <div>
+                  <div class="hero-eyebrow" id="weatherModeLabel">DEMO WEATHER ENVIRONMENT</div>
+                  <div class="weather-hero-location" id="weatherFullLocation">Candolim, North Goa</div>
+                  <div style="font-size: 13.5px; color: var(--text-secondary);" id="weatherConditionFull">Clear sunny skies with gentle sea breeze</div>
+                </div>
+                <div style="font-size: 48px;" id="weatherBigIcon">☀️</div>
+              </div>
+
+              <!-- 4-Stat Strip -->
+              <div class="weather-stats-strip">
+                <div class="stat-item">
+                  <div class="stat-label">Temperature</div>
+                  <div class="stat-val" id="statTemp">29°C</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-label">Rain Risk</div>
+                  <div class="stat-val" id="statRain">5%</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-label">Humidity</div>
+                  <div class="stat-val" id="statHumidity">68%</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-label">Wind Speed</div>
+                  <div class="stat-val" id="statWind">14 km/h</div>
+                </div>
+              </div>
+
+              <!-- Activity Conflict Warning Box (Shows if Rain) -->
+              <div class="weather-conflict-box" id="weatherConflictBox" style="display: none;">
+                <div class="conflict-heading">⚠️ TRIP ACTIVITY CONFLICT DETECTED</div>
+                <div class="conflict-details" id="weatherConflictDetails">
+                  Heavy rain expected tomorrow (Day 2). Outdoor activity <strong>Candolim Beach & Water Sports</strong> is exposed to weather disruption.
+                </div>
+                <div style="display: flex; gap: 10px;">
+                  <button type="button" class="btn-primary-lg" id="btnApplyAdaptationWeather" style="padding: 8px 16px; font-size: 13px;">
+                    VIEW UPDATED ITINERARY
+                  </button>
+                  <button type="button" class="btn-secondary-lg" id="btnAskConciergeWeather" style="padding: 8px 16px; font-size: 13px;">
+                    ASK CONCIERGE
+                  </button>
+                </div>
+              </div>
+
+              <!-- 24-Hour Hourly Forecast -->
+              <div style="margin-top: 24px;">
+                <div class="context-box-title">24-HOUR HOURLY FORECAST</div>
+                <div class="hourly-strip" id="hourlyStrip"></div>
+              </div>
+
+              <!-- 5-Day Daily Forecast -->
+              <div style="margin-top: 24px;">
+                <div class="context-box-title">5-DAY TRIP FORECAST</div>
+                <div class="pillars-grid" id="dailyForecastGrid" style="grid-template-columns: repeat(5, 1fr); margin-top: 12px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------
+               SUB-VIEW: NOTIFICATIONS (/app/notifications)
+               -------------------------------------------------------- -->
+          <div class="app-subview" id="subViewNotifications" style="display: none;">
+            <div class="itinerary-page-header">
+              <div>
+                <h1 class="itinerary-main-title">Trip Notifications & Alerts</h1>
+                <p style="font-size: 14px; color: var(--text-secondary);">Proactive alerts, schedule adjustments, and concierge recommendations.</p>
+              </div>
+              <button type="button" class="btn-secondary-lg" id="btnClearNotifs">
+                Mark All as Read
+              </button>
+            </div>
+
+            <div class="notifications-feed" id="notificationsFeedContainer"></div>
+          </div>
+
+          <!-- --------------------------------------------------------
+               SUB-VIEW: SETTINGS (/app/settings)
+               -------------------------------------------------------- -->
+          <div class="app-subview" id="subViewSettings" style="display: none;">
+            <div class="itinerary-page-header">
+              <div>
+                <h1 class="itinerary-main-title">Trip Settings & Profile</h1>
+                <p style="font-size: 14px; color: var(--text-secondary);">Manage guest preferences, simulated channels, and active booking keys.</p>
+              </div>
+            </div>
+
+            <div class="overview-card" style="max-width: 680px;">
+              <h3 class="overview-card-title" style="margin-bottom: 16px;">Demo & Integration Environment</h3>
+              <div style="display: flex; flex-direction: column; gap: 14px; font-size: 13.5px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div>
+                    <strong>AI Concierge Mode:</strong>
+                    <div style="font-size: 12px; color: var(--text-muted);">Deterministic grounded fallback with Claude 3.5 Sonnet support</div>
+                  </div>
+                  <span class="status-pill ready" id="settingsClaudeStatus">DEMO AI</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div>
+                    <strong>Weather Service Mode:</strong>
+                    <div style="font-size: 12px; color: var(--text-muted);">OpenWeatherMap API with in-memory caching</div>
+                  </div>
+                  <span class="status-pill ready" id="settingsWeatherStatus">DEMO WEATHER</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div>
+                    <strong>Telegram Integration:</strong>
+                    <div style="font-size: 12px; color: var(--text-muted);">Simulated channel with chat_id logging</div>
+                  </div>
+                  <span class="status-pill booked" id="settingsTelegramStatus">DEMO TELEGRAM</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-subtle); display: flex; gap: 12px;">
+                <button type="button" class="btn-secondary-lg" id="btnResetToDemo">
+                  Reset Demo Trip
+                </button>
+                <button type="button" class="btn-primary-lg" data-route="/book">
+                  Create New Booking
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- First-Time Tutorial Modal -->
+  <div class="modal-overlay" id="tutorialModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="btnCloseTutorial" aria-label="Close">✕</button>
+      <div class="tutorial-step-icon" id="tutIcon">🏨</div>
+      <h2 class="tutorial-step-title" id="tutTitle">Welcome to WAYZYY</h2>
+      <p class="tutorial-step-desc" id="tutDesc">
+        WAYZYY is an intelligent travel concierge that stays with you before and during your trip.
+      </p>
+      
+      <div class="tutorial-progress-dots">
+        <span class="tutorial-dot active" data-dot="1"></span>
+        <span class="tutorial-dot" data-dot="2"></span>
+        <span class="tutorial-dot" data-dot="3"></span>
+        <span class="tutorial-dot" data-dot="4"></span>
+        <span class="tutorial-dot" data-dot="5"></span>
+      </div>
+
+      <div class="tutorial-buttons">
+        <button type="button" class="btn-secondary-lg" id="btnSkipTutorial" style="padding: 8px 16px; font-size: 13px;">Skip</button>
+        <button type="button" class="btn-primary-lg" id="btnNextTutorial" style="padding: 8px 20px; font-size: 13px;">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Itinerary Action Bottom Sheet -->
+  <div class="bottom-sheet-overlay" id="mobileBottomSheet" role="dialog" aria-modal="true">
+    <div class="bottom-sheet-card">
+      <div class="bottom-sheet-drag-handle"></div>
+      <div class="bottom-sheet-header">
+        <div>
+          <span class="slot-badge" id="sheetSlotBadge">DAY 2 · AFTERNOON</span>
+          <h3 class="sheet-title" id="sheetPlaceTitle">Fort Aguada & Lighthouse</h3>
+          <div class="sheet-meta" id="sheetPlaceMeta">Candolim · Heritage · 1.2 km away</div>
+        </div>
+        <button type="button" class="sheet-close-btn" id="btnCloseBottomSheet" aria-label="Close">✕</button>
+      </div>
+      <div class="sheet-body">
+        <div class="sheet-why-box">
+          <strong>Why WAYZYY chose this:</strong>
+          <span id="sheetWhyText">Matches your relaxed pace and historical interest, 8 minutes from your villa.</span>
+        </div>
+        <div class="sheet-weather-fit" id="sheetWeatherFit">
+          <span>☀️</span> Weather fit: Ideal for outdoor walk before sunset (0% rain chance).
+        </div>
+        <div class="sheet-actions">
+          <a href="#" class="sheet-action-btn sheet-btn-nav" id="sheetBtnDirections" target="_blank" rel="noopener">
+            <span>↗</span> Get Directions (Google Maps)
+          </a>
+          <button type="button" class="sheet-action-btn sheet-btn-replace" id="sheetBtnReplace">
+            <span>🔄</span> Replace Activity
+          </button>
+          <button type="button" class="sheet-action-btn sheet-btn-move" id="sheetBtnMove">
+            <span>📅</span> Move to Another Day
+          </button>
+          <button type="button" class="sheet-action-btn sheet-btn-remove" id="sheetBtnRemove">
+            <span>🗑️</span> Remove from Itinerary
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full-Screen Interactive Leaflet Map Modal -->
+  <div class="map-modal-overlay" id="mobileMapModal" role="dialog" aria-modal="true">
+    <div class="map-modal-card">
+      <div class="map-modal-header">
+        <div class="map-modal-title">
+          <span>🧭</span> Goa Live Map & Places
+        </div>
+        <div class="map-filter-group" id="mapModalFilterGroup">
+          <button type="button" class="btn-map-filter active" data-filter="all">All</button>
+          <button type="button" class="btn-map-filter" data-filter="beach">Beaches</button>
+          <button type="button" class="btn-map-filter" data-filter="food">Dining</button>
+          <button type="button" class="btn-map-filter" data-filter="heritage">Heritage</button>
+          <button type="button" class="btn-map-filter" data-filter="nature">Nature</button>
+          <button type="button" class="btn-map-filter" data-filter="indoor">Indoor Safe</button>
+          <button type="button" class="sheet-close-btn" id="btnCloseMapModal" aria-label="Close">✕</button>
+        </div>
+      </div>
+      <div class="map-modal-view">
+        <!-- Real Leaflet Map Container -->
+        <div id="realGoaMap" style="width: 100%; height: 100%; min-height: 480px; z-index: 10;"></div>
+
+        <!-- Selected Place Floating Card -->
+        <div class="map-selected-card" id="mapSelectedCard" style="display: none; z-index: 500;">
+          <div class="map-card-content">
+            <span class="tag-pill" id="mapCardTag">BEACH</span>
+            <h4 class="map-card-title" id="mapCardTitle">Candolim Beach</h4>
+            <p class="map-card-desc" id="mapCardDesc">Golden sand shoreline with beach shacks.</p>
+            <div class="map-card-meta" id="mapCardMeta">📍 Candolim · 450 m away</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <button type="button" class="btn-primary-lg" id="btnMapCardAction" style="padding: 8px 14px; font-size: 12px; white-space: nowrap;">
+              ADD TO PLAN
+            </button>
+            <a href="#" target="_blank" rel="noopener" class="btn-secondary-lg" id="btnMapCardDirections" style="padding: 6px 12px; font-size: 11.5px; text-align: center;">
+              ↗ Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Mobile Bottom Navigation (Safe Area Inset Aware) -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Mobile Navigation">
+    <button type="button" class="mobile-nav-item active" data-sub="overview" id="mobNavHome">
+      <span class="mobile-nav-icon">🏠</span>
+      <span class="mobile-nav-label">Home</span>
+    </button>
+    <button type="button" class="mobile-nav-item" data-sub="itinerary" id="mobNavPlan">
+      <span class="mobile-nav-icon">🗓️</span>
+      <span class="mobile-nav-label">Plan</span>
+    </button>
+    <button type="button" class="mobile-nav-item" data-sub="explore" id="mobNavExplore">
+      <span class="mobile-nav-icon">🧭</span>
+      <span class="mobile-nav-label">Explore</span>
+    </button>
+    <button type="button" class="mobile-nav-item" data-sub="concierge" id="mobNavAI">
+      <span class="mobile-nav-icon">💬</span>
+      <span class="mobile-nav-label">AI</span>
+    </button>
+    <button type="button" class="mobile-nav-item" data-sub="weather" id="mobNavMore">
+      <span class="mobile-nav-icon">⛅</span>
+      <span class="mobile-nav-label">Weather</span>
+    </button>
+  </nav>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Leaflet Mapping Library -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Client Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

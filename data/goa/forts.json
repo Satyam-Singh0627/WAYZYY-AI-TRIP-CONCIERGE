@@ -1,0 +1,314 @@
+[
+  {
+    "id": "GOA-FORT-001",
+    "name": "Fort Aguada",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Sinquerim",
+    "coordinates": {
+      "lat": 15.4925,
+      "lng": 73.7736
+    },
+    "address": "Fort Aguada, Sinquerim, North Goa, Goa",
+    "tags": [
+      "fort",
+      "lighthouse",
+      "mandovi views",
+      "history"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-002",
+    "name": "Lower Aguada Fort",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Sinquerim",
+    "coordinates": {
+      "lat": 15.4947,
+      "lng": 73.7661
+    },
+    "address": "Lower Aguada Fort, Sinquerim, North Goa, Goa",
+    "tags": [
+      "fort",
+      "sea wall",
+      "jail museum",
+      "coastal ramparts"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-003",
+    "name": "Chapora Fort",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Chapora",
+    "coordinates": {
+      "lat": 15.6074,
+      "lng": 73.7408
+    },
+    "address": "Chapora Fort, Chapora, North Goa, Goa",
+    "tags": [
+      "fort",
+      "sunset",
+      "dil chahta hai",
+      "river views"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-004",
+    "name": "Reis Magos Fort",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Reis Magos",
+    "coordinates": {
+      "lat": 15.4981,
+      "lng": 73.8089
+    },
+    "address": "Reis Magos Fort, Reis Magos, North Goa, Goa",
+    "tags": [
+      "fort",
+      "museum",
+      "mario miranda",
+      "covered halls"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.9,
+      "rain": 0.8
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-005",
+    "name": "Cabo de Rama Fort",
+    "type": "fort",
+    "region": "South Goa",
+    "area": "Canacona",
+    "coordinates": {
+      "lat": 15.0889,
+      "lng": 73.9219
+    },
+    "address": "Cabo de Rama Fort, Canacona, South Goa, Goa",
+    "tags": [
+      "fort",
+      "remote",
+      "dramatic sea cliff",
+      "church"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-FORT-006",
+    "name": "Corjuem Fort",
+    "type": "fort",
+    "region": "North Goa",
+    "area": "Mapusa",
+    "coordinates": {
+      "lat": 15.5978,
+      "lng": 73.8967
+    },
+    "address": "Corjuem Fort, Mapusa, North Goa, Goa",
+    "tags": [
+      "fort",
+      "inland fort",
+      "river island",
+      "history"
+    ],
+    "categories": [
+      "forts",
+      "heritage",
+      "history",
+      "sightseeing"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.2
+    },
+    "best_time": [
+      "morning",
+      "late afternoon",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.6,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.9,
+    "food_score": 0.1,
+    "opening_hours": "09:30 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

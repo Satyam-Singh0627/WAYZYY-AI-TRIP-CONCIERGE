@@ -1,0 +1,100 @@
+[
+  {
+    "id": "GOA-STAY-007",
+    "name": "Mayem Lake View",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Mapusa",
+    "coordinates": {
+      "lat": 15.5819,
+      "lng": 73.9219
+    },
+    "address": "Mayem Lake View, Mapusa, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-STAY-008",
+    "name": "Fort Tiracol Heritage Hotel",
+    "type": "hotel",
+    "region": "North Goa",
+    "area": "Arambol",
+    "coordinates": {
+      "lat": 15.7289,
+      "lng": 73.6844
+    },
+    "address": "Fort Tiracol Heritage Hotel, Arambol, North Goa, Goa",
+    "tags": [
+      "hotel",
+      "official gtdc",
+      "residency",
+      "accommodations"
+    ],
+    "categories": [
+      "hotels",
+      "stays",
+      "accommodations"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "any"
+    ],
+    "estimated_duration_minutes": null,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.7,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 0.5,
+    "food_score": 0.6,
+    "opening_hours": "24 hours check-in",
+    "website": "https://bookings.goa-tourism.com/",
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://bookings.goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

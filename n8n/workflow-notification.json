@@ -1,0 +1,117 @@
+{
+  "name": "Wayzyy - Proactive Weather Adaptation Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 4
+            }
+          ]
+        }
+      },
+      "id": "node-schedule-check",
+      "name": "Periodic Weather Monitor",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [180, 240]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "trigger-weather-demo",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "node-webhook-demo",
+      "name": "Deterministic Demo Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [180, 420]
+    },
+    {
+      "parameters": {
+        "url": "https://api.openweathermap.org/data/2.5/weather",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            { "name": "lat", "value": "15.5178" },
+            { "name": "lon", "value": "73.7634" },
+            { "name": "appid", "value": "={{ $env.OPENWEATHER_API_KEY }}" }
+          ]
+        }
+      },
+      "id": "node-http-weather",
+      "name": "Query OpenWeatherMap",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [420, 320]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json[\"weather\"][0][\"main\"] }}",
+              "operation": "contains",
+              "value2": "Rain"
+            }
+          ]
+        }
+      },
+      "id": "node-if-rain",
+      "name": "Disruption Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [620, 320]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3000/api/adapt",
+        "options": {},
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"booking_id\": \"BK-WAYZ-7821\",\n  \"day_number\": 2\n}"
+      },
+      "id": "node-http-adapt",
+      "name": "Perform Itinerary Adaptation",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [840, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json[\"notification\"][\"chat_id\"] || '987654321' }}",
+        "text": "={{ $json[\"proactive_message\"] }}",
+        "additionalFields": {}
+      },
+      "id": "node-telegram-notify",
+      "name": "Send Proactive Telegram Alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [1040, 300]
+    }
+  ],
+  "connections": {
+    "Periodic Weather Monitor": {
+      "main": [[{ "node": "Query OpenWeatherMap", "type": "main", "index": 0 }]]
+    },
+    "Deterministic Demo Trigger": {
+      "main": [[{ "node": "Query OpenWeatherMap", "type": "main", "index": 0 }]]
+    },
+    "Query OpenWeatherMap": {
+      "main": [[{ "node": "Disruption Check", "type": "main", "index": 0 }]]
+    },
+    "Disruption Check": {
+      "main": [
+        [{ "node": "Perform Itinerary Adaptation", "type": "main", "index": 0 }],
+        []
+      ]
+    },
+    "Perform Itinerary Adaptation": {
+      "main": [[{ "node": "Send Proactive Telegram Alert", "type": "main", "index": 0 }]]
+    }
+  }
+}

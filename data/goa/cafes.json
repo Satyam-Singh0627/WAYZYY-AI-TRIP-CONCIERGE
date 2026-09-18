@@ -1,0 +1,55 @@
+[
+  {
+    "id": "GOA-MUSEUM-007",
+    "name": "Mario Miranda Gallery & Art Cafe",
+    "type": "museum",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5167,
+      "lng": 73.7661
+    },
+    "address": "Mario Miranda Gallery & Art Cafe, Candolim, North Goa, Goa",
+    "tags": [
+      "art",
+      "souvenirs",
+      "cartoonist",
+      "indoor",
+      "cafe"
+    ],
+    "categories": [
+      "museums",
+      "culture",
+      "indoor",
+      "rain_safe"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 0.9,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "midday",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 75,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.3,
+    "opening_hours": "10:00 - 18:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

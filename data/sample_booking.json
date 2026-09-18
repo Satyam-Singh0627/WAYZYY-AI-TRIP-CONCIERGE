@@ -1,0 +1,24 @@
+{
+  "booking_id": "BK-WAYZ-7821",
+  "guest_id": "GST-RAHUL-44",
+  "guest_name": "Rahul Sharma",
+  "telegram_chat_id": "987654321",
+  "property": {
+    "name": "Casa Candolim Luxury Villa",
+    "area": "Candolim"
+  },
+  "trip": {
+    "destination": "Goa",
+    "check_in": "2026-10-15",
+    "check_out": "2026-10-19",
+    "nights": 4,
+    "guest_count": 2
+  },
+  "preferences": {
+    "vibe": ["beach", "food", "nightlife", "relaxed"],
+    "activity_level": "moderate",
+    "dietary": "non-veg & seafood",
+    "pace": "balanced"
+  },
+  "created_at": "2026-10-01T10:00:00Z"
+}

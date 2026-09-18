@@ -1,0 +1,104 @@
+[
+  {
+    "id": "GOA-NATURE-001",
+    "name": "Dudhsagar Waterfalls",
+    "type": "nature",
+    "region": "South Goa",
+    "area": "Dudhsagar",
+    "coordinates": {
+      "lat": 15.3144,
+      "lng": 74.3144
+    },
+    "address": "Dudhsagar Waterfalls, Dudhsagar, South Goa, Goa",
+    "tags": [
+      "waterfall",
+      "sea of milk",
+      "jeep safari",
+      "trekking"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NATURE-002",
+    "name": "Arvalem Waterfalls",
+    "type": "nature",
+    "region": "North Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.5564,
+      "lng": 74.0264
+    },
+    "address": "Arvalem Waterfalls, Ponda, North Goa, Goa",
+    "tags": [
+      "waterfall",
+      "harvalem",
+      "nature cascade",
+      "rudreshwar"
+    ],
+    "categories": [
+      "nature",
+      "waterfalls",
+      "wildlife",
+      "outdoors"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.4
+    },
+    "best_time": [
+      "morning",
+      "day trip"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.9,
+    "relaxed_score": 0.7,
+    "cultural_score": 0.5,
+    "food_score": 0.2,
+    "opening_hours": "08:00 - 17:00",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

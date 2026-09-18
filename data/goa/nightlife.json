@@ -1,0 +1,101 @@
+[
+  {
+    "id": "GOA-NIGHT-001",
+    "name": "SinQ Night Club & Showbar Exchange",
+    "type": "nightlife",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5136,
+      "lng": 73.7689
+    },
+    "address": "Aguada - Siolim Road, Candolim, Goa 403515",
+    "tags": [
+      "nightlife",
+      "dj club",
+      "air conditioned",
+      "poolside cabanas",
+      "rain safe"
+    ],
+    "categories": [
+      "nightlife",
+      "clubs",
+      "indoor"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "night"
+    ],
+    "estimated_duration_minutes": 180,
+    "price_level": 3,
+    "family_friendly": false,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.1,
+    "adventure_score": 0.7,
+    "relaxed_score": 0.3,
+    "cultural_score": 0.2,
+    "food_score": 0.6,
+    "opening_hours": "21:00 - 03:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-NIGHT-002",
+    "name": "Anjuna Flea Market & Curlies",
+    "type": "nightlife",
+    "region": "North Goa",
+    "area": "Anjuna",
+    "coordinates": {
+      "lat": 15.5789,
+      "lng": 73.7422
+    },
+    "address": "South Anjuna Beach, Anjuna, Goa 403509",
+    "tags": [
+      "beach party",
+      "trance",
+      "sunset chill",
+      "bohemian"
+    ],
+    "categories": [
+      "nightlife",
+      "beach_clubs"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.7,
+      "rain": 0.1
+    },
+    "best_time": [
+      "evening",
+      "night"
+    ],
+    "estimated_duration_minutes": 150,
+    "price_level": 2,
+    "family_friendly": false,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.2,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.6,
+    "cultural_score": 0.5,
+    "food_score": 0.7,
+    "opening_hours": "08:30 - 03:00",
+    "website": null,
+    "phone": null,
+    "source": "Curated Local Guide",
+    "source_type": "manual",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

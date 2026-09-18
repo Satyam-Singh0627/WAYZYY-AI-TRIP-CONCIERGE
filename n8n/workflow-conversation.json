@@ -1,0 +1,49 @@
+{
+  "name": "Wayzyy - Conversational Concierge",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": ["message"]
+      },
+      "id": "node-telegram-trigger",
+      "name": "Telegram Guest Message",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1,
+      "position": [180, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3000/api/concierge/chat",
+        "options": {},
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"booking_id\": \"BK-WAYZ-7821\",\n  \"message\": \"{{ $json[\"message\"][\"text\"] }}\",\n  \"sender\": \"guest\"\n}"
+      },
+      "id": "node-http-chat",
+      "name": "Query AI Concierge Engine",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [420, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $node[\"Telegram Guest Message\"].json[\"message\"][\"chat\"][\"id\"] }}",
+        "text": "={{ $json[\"reply\"] }}",
+        "additionalFields": {}
+      },
+      "id": "node-telegram-reply",
+      "name": "Send Telegram Reply",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [660, 300]
+    }
+  ],
+  "connections": {
+    "Telegram Guest Message": {
+      "main": [[{ "node": "Query AI Concierge Engine", "type": "main", "index": 0 }]]
+    },
+    "Query AI Concierge Engine": {
+      "main": [[{ "node": "Send Telegram Reply", "type": "main", "index": 0 }]]
+    }
+  }
+}

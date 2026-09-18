@@ -1,0 +1,33 @@
+[
+  {
+    "id": "SRC-GTDC",
+    "name": "Goa Tourism Development Corporation",
+    "type": "official",
+    "url": "https://goa-tourism.com/",
+    "beach_url": "https://goa-tourism.com/beach/",
+    "booking_url": "https://bookings.goa-tourism.com/",
+    "stay_url": "https://goa-tourism.com/stay-in-goa/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "SRC-OSM",
+    "name": "OpenStreetMap / Overpass API",
+    "type": "osm",
+    "url": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "SRC-GOOGLE",
+    "name": "Google Places API (Web Service)",
+    "type": "google",
+    "url": "https://developers.google.com/maps/documentation/places/web-service",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "SRC-OPENMETEO",
+    "name": "Open-Meteo Weather API",
+    "type": "weather",
+    "url": "https://open-meteo.com/en/docs",
+    "last_verified": "2026-09-18"
+  }
+]

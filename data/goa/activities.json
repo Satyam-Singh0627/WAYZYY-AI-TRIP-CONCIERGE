@@ -1,0 +1,103 @@
+[
+  {
+    "id": "GOA-EXP-001",
+    "name": "Fontainhas Latin Quarter Heritage Walk",
+    "type": "activity",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4958,
+      "lng": 73.8322
+    },
+    "address": "Fontainhas, Panaji, Goa 403001",
+    "tags": [
+      "heritage walk",
+      "portuguese houses",
+      "art cafes",
+      "covered bakeries"
+    ],
+    "categories": [
+      "activities",
+      "culture",
+      "heritage"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 0.85
+    },
+    "best_time": [
+      "morning",
+      "late afternoon"
+    ],
+    "estimated_duration_minutes": 90,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 1,
+    "food_score": 0.8,
+    "opening_hours": "Open all day",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism / Curated Local Guide",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-EXP-002",
+    "name": "Savoi Spice Plantation Experience",
+    "type": "activity",
+    "region": "South Goa",
+    "area": "Ponda",
+    "coordinates": {
+      "lat": 15.4419,
+      "lng": 74.0536
+    },
+    "address": "Savoi, Ponda, Goa 403401",
+    "tags": [
+      "spice plantation",
+      "covered pavilions",
+      "traditional buffet",
+      "botany"
+    ],
+    "categories": [
+      "activities",
+      "nature",
+      "food",
+      "covered"
+    ],
+    "indoor_outdoor": "covered",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 0.9
+    },
+    "best_time": [
+      "morning",
+      "lunch"
+    ],
+    "estimated_duration_minutes": 150,
+    "price_level": 2,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.4,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.9,
+    "food_score": 0.9,
+    "opening_hours": "09:30 - 16:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

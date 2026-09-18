@@ -1,0 +1,409 @@
+[
+  {
+    "id": "GOA-CHURCH-001",
+    "name": "Basilica of Bom Jesus",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5008,
+      "lng": 73.9117
+    },
+    "address": "Basilica of Bom Jesus, Old Goa, North Goa, Goa",
+    "tags": [
+      "unesco",
+      "st francis xavier",
+      "baroque",
+      "heritage"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-002",
+    "name": "Se Cathedral",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5039,
+      "lng": 73.9125
+    },
+    "address": "Se Cathedral, Old Goa, North Goa, Goa",
+    "tags": [
+      "unesco",
+      "golden bell",
+      "cathedral",
+      "largest in asia"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-003",
+    "name": "Church of Saint Augustine Ruins",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5019,
+      "lng": 73.9056
+    },
+    "address": "Church of Saint Augustine Ruins, Old Goa, North Goa, Goa",
+    "tags": [
+      "ruins",
+      "belfry tower",
+      "unesco",
+      "history"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-004",
+    "name": "St Cajetan Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5056,
+      "lng": 73.9144
+    },
+    "address": "St Cajetan Church, Old Goa, North Goa, Goa",
+    "tags": [
+      "corinthian",
+      "st peters rome replica",
+      "quiet",
+      "heritage"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-005",
+    "name": "St Francis of Assisi Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5036,
+      "lng": 73.9122
+    },
+    "address": "St Francis of Assisi Church, Old Goa, North Goa, Goa",
+    "tags": [
+      "manueline",
+      "museum",
+      "wood carvings",
+      "unesco"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-006",
+    "name": "Immaculate Conception Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4989,
+      "lng": 73.8292
+    },
+    "address": "Immaculate Conception Church, Panaji, North Goa, Goa",
+    "tags": [
+      "zigzag stairs",
+      "iconic landmark",
+      "panaji",
+      "portuguese"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-007",
+    "name": "Old Goa Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5028,
+      "lng": 73.9111
+    },
+    "address": "Old Goa Church, Old Goa, North Goa, Goa",
+    "tags": [
+      "heritage precinct",
+      "unesco",
+      "architecture"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-CHURCH-008",
+    "name": "Santa Monica Church",
+    "type": "church",
+    "region": "North Goa",
+    "area": "Old Goa",
+    "coordinates": {
+      "lat": 15.5022,
+      "lng": 73.9067
+    },
+    "address": "Santa Monica Church, Old Goa, North Goa, Goa",
+    "tags": [
+      "convent",
+      "christian art museum",
+      "covered",
+      "heritage"
+    ],
+    "categories": [
+      "churches",
+      "heritage",
+      "unesco",
+      "culture"
+    ],
+    "indoor_outdoor": "indoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 1,
+      "rain": 1
+    },
+    "best_time": [
+      "morning",
+      "afternoon"
+    ],
+    "estimated_duration_minutes": 60,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.8,
+    "adventure_score": 0.1,
+    "relaxed_score": 0.8,
+    "cultural_score": 1,
+    "food_score": 0.1,
+    "opening_hours": "09:00 - 17:30",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/",
+    "last_verified": "2026-09-18"
+  }
+]

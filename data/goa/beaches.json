@@ -1,0 +1,1327 @@
+[
+  {
+    "id": "GOA-BEACH-001",
+    "name": "Agonda Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Agonda",
+    "coordinates": {
+      "lat": 15.0442,
+      "lng": 73.9878
+    },
+    "address": "Agonda Beach, Agonda, South Goa, Goa",
+    "tags": [
+      "beach",
+      "turtle sanctuary",
+      "quiet",
+      "surfing"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-002",
+    "name": "Aguada Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Sinquerim",
+    "coordinates": {
+      "lat": 15.4989,
+      "lng": 73.7681
+    },
+    "address": "Aguada Beach, Sinquerim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "fort views",
+      "luxury",
+      "water sports"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-003",
+    "name": "Arambol Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Arambol",
+    "coordinates": {
+      "lat": 15.6869,
+      "lng": 73.7042
+    },
+    "address": "Arambol Beach, Arambol, North Goa, Goa",
+    "tags": [
+      "beach",
+      "sweet lake",
+      "drum circle",
+      "bohemian"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-004",
+    "name": "Anjuna Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Anjuna",
+    "coordinates": {
+      "lat": 15.5804,
+      "lng": 73.7429
+    },
+    "address": "Anjuna Beach, Anjuna, North Goa, Goa",
+    "tags": [
+      "beach",
+      "flea market",
+      "curlies",
+      "rocky"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-005",
+    "name": "Ashwem Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Ashwem",
+    "coordinates": {
+      "lat": 15.6601,
+      "lng": 73.7197
+    },
+    "address": "Ashwem Beach, Ashwem, North Goa, Goa",
+    "tags": [
+      "beach",
+      "boutique",
+      "chic",
+      "palm groves"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-006",
+    "name": "Baga Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Baga",
+    "coordinates": {
+      "lat": 15.5553,
+      "lng": 73.7517
+    },
+    "address": "Baga Beach, Baga, North Goa, Goa",
+    "tags": [
+      "beach",
+      "nightlife",
+      "water sports",
+      "shacks"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-007",
+    "name": "Bambolim Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Bambolim",
+    "coordinates": {
+      "lat": 15.4489,
+      "lng": 73.8569
+    },
+    "address": "Bambolim Beach, Bambolim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "calm",
+      "resorts",
+      "sailing"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-008",
+    "name": "Benaulim Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Benaulim",
+    "coordinates": {
+      "lat": 15.2589,
+      "lng": 73.9178
+    },
+    "address": "Benaulim Beach, Benaulim, South Goa, Goa",
+    "tags": [
+      "beach",
+      "dolphin watching",
+      "peaceful"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-009",
+    "name": "Betalbatim Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Betalbatim",
+    "coordinates": {
+      "lat": 15.2978,
+      "lng": 73.9122
+    },
+    "address": "Betalbatim Beach, Betalbatim, South Goa, Goa",
+    "tags": [
+      "beach",
+      "sunset",
+      "pine groves",
+      "quiet"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-010",
+    "name": "Betul Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Betul",
+    "coordinates": {
+      "lat": 15.1489,
+      "lng": 73.9536
+    },
+    "address": "Betul Beach, Betul, South Goa, Goa",
+    "tags": [
+      "beach",
+      "fishing port",
+      "river mouth",
+      "seafood"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-011",
+    "name": "Bogmalo Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Bogmalo",
+    "coordinates": {
+      "lat": 15.3789,
+      "lng": 73.8344
+    },
+    "address": "Bogmalo Beach, Bogmalo, South Goa, Goa",
+    "tags": [
+      "beach",
+      "scuba diving",
+      "cove",
+      "near airport"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-012",
+    "name": "Butterfly Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Palolem",
+    "coordinates": {
+      "lat": 15.0256,
+      "lng": 74.0044
+    },
+    "address": "Butterfly Beach, Palolem, South Goa, Goa",
+    "tags": [
+      "beach",
+      "hidden cove",
+      "boat access",
+      "dolphins"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-013",
+    "name": "Calangute Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Calangute",
+    "coordinates": {
+      "lat": 15.5439,
+      "lng": 73.7553
+    },
+    "address": "Calangute Beach, Calangute, North Goa, Goa",
+    "tags": [
+      "beach",
+      "queen of beaches",
+      "water sports",
+      "shopping"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-014",
+    "name": "Candolim Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Candolim",
+    "coordinates": {
+      "lat": 15.5178,
+      "lng": 73.7634
+    },
+    "address": "Candolim Beach, Candolim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "water sports",
+      "relaxed",
+      "fine dining"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-015",
+    "name": "Cola Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Canacona",
+    "coordinates": {
+      "lat": 15.0611,
+      "lng": 73.9744
+    },
+    "address": "Cola Beach, Canacona, South Goa, Goa",
+    "tags": [
+      "beach",
+      "blue lagoon",
+      "hidden",
+      "kayaking"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-016",
+    "name": "Galgibaga / Turtle Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Canacona",
+    "coordinates": {
+      "lat": 14.9658,
+      "lng": 74.0489
+    },
+    "address": "Galgibaga / Turtle Beach, Canacona, South Goa, Goa",
+    "tags": [
+      "beach",
+      "olive ridley turtle",
+      "protected",
+      "pristine"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-017",
+    "name": "Majorda Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Majorda",
+    "coordinates": {
+      "lat": 15.3144,
+      "lng": 73.9089
+    },
+    "address": "Majorda Beach, Majorda, South Goa, Goa",
+    "tags": [
+      "beach",
+      "white sands",
+      "bakeries",
+      "wide shore"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-018",
+    "name": "Miramar Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Panaji",
+    "coordinates": {
+      "lat": 15.4819,
+      "lng": 73.8086
+    },
+    "address": "Miramar Beach, Panaji, North Goa, Goa",
+    "tags": [
+      "beach",
+      "city beach",
+      "mandovi estuary",
+      "sunset walk"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-019",
+    "name": "Morjim Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Morjim",
+    "coordinates": {
+      "lat": 15.6322,
+      "lng": 73.7319
+    },
+    "address": "Morjim Beach, Morjim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "turtle nesting",
+      "kitesurfing",
+      "quiet"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-020",
+    "name": "Palolem Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Palolem",
+    "coordinates": {
+      "lat": 15.01,
+      "lng": 74.0231
+    },
+    "address": "Palolem Beach, Palolem, South Goa, Goa",
+    "tags": [
+      "beach",
+      "crescent bay",
+      "kayaking",
+      "scenic"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-021",
+    "name": "Patnem Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Patnem",
+    "coordinates": {
+      "lat": 14.9972,
+      "lng": 74.0328
+    },
+    "address": "Patnem Beach, Patnem, South Goa, Goa",
+    "tags": [
+      "beach",
+      "yoga",
+      "chill shacks",
+      "swimming"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-022",
+    "name": "Sinquerim Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Sinquerim",
+    "coordinates": {
+      "lat": 15.5019,
+      "lng": 73.7678
+    },
+    "address": "Sinquerim Beach, Sinquerim, North Goa, Goa",
+    "tags": [
+      "beach",
+      "fort aguada",
+      "jet ski",
+      "scenic"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-023",
+    "name": "Vagator Beach",
+    "type": "beach",
+    "region": "North Goa",
+    "area": "Vagator",
+    "coordinates": {
+      "lat": 15.6028,
+      "lng": 73.7336
+    },
+    "address": "Vagator Beach, Vagator, North Goa, Goa",
+    "tags": [
+      "beach",
+      "red cliffs",
+      "chapora views",
+      "sunsets"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-024",
+    "name": "Varca Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Varca",
+    "coordinates": {
+      "lat": 15.2289,
+      "lng": 73.9236
+    },
+    "address": "Varca Beach, Varca, South Goa, Goa",
+    "tags": [
+      "beach",
+      "luxury resorts",
+      "white sand",
+      "calm"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-025",
+    "name": "Cavelossim Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Cavelossim",
+    "coordinates": {
+      "lat": 15.1789,
+      "lng": 73.9458
+    },
+    "address": "Cavelossim Beach, Cavelossim, South Goa, Goa",
+    "tags": [
+      "beach",
+      "black rocks",
+      "dolphin cruises",
+      "quiet"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.9,
+    "adventure_score": 0.3,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  },
+  {
+    "id": "GOA-BEACH-026",
+    "name": "Mobor Beach",
+    "type": "beach",
+    "region": "South Goa",
+    "area": "Mobor",
+    "coordinates": {
+      "lat": 15.1589,
+      "lng": 73.9489
+    },
+    "address": "Mobor Beach, Mobor, South Goa, Goa",
+    "tags": [
+      "beach",
+      "peninsula",
+      "sal river mouth",
+      "water sports"
+    ],
+    "categories": [
+      "beaches",
+      "outdoors",
+      "nature"
+    ],
+    "indoor_outdoor": "outdoor",
+    "weather_fit": {
+      "clear": 1,
+      "cloudy": 0.8,
+      "rain": 0.1
+    },
+    "best_time": [
+      "morning",
+      "evening",
+      "sunset"
+    ],
+    "estimated_duration_minutes": 120,
+    "price_level": 1,
+    "family_friendly": true,
+    "couple_friendly": true,
+    "solo_friendly": true,
+    "quiet_score": 0.4,
+    "adventure_score": 0.8,
+    "relaxed_score": 0.9,
+    "cultural_score": 0.2,
+    "food_score": 0.7,
+    "opening_hours": "Open 24 hours",
+    "website": null,
+    "phone": null,
+    "source": "Goa Tourism Development Corporation",
+    "source_type": "official",
+    "source_url": "https://goa-tourism.com/beach/",
+    "last_verified": "2026-09-18"
+  }
+]
