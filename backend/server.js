@@ -8,7 +8,17 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Security & Middlewares
-app.use(cors());
+const allowedOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(',').map(s => s.trim())
+  : '*';
+
+app.use(cors({
+  origin: allowedOrigins === '*' ? '*' : allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  credentials: false
+}));
+app.options('*', cors());
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true }));
 
@@ -32,7 +42,7 @@ app.use(express.static(frontendPath));
 // Fallback for Single Page UI
 app.get('*', (req, res) => {
   if (req.path.startsWith('/api')) {
-    return res.status(404).json({ error: 'API endpoint not found' });
+    return res.status(404).json({ success: false, error: 'API endpoint not found' });
   }
   res.sendFile(path.join(frontendPath, 'index.html'));
 });

@@ -147,31 +147,31 @@ router.post('/bookings', async (req, res) => {
     const payload = req.body;
 
     if (!payload.guest_name || typeof payload.guest_name !== 'string' || !payload.guest_name.trim()) {
-      return res.status(400).json({ error: 'Missing or invalid guest_name' });
+      return res.status(400).json({ success: false, error: 'Missing or invalid guest_name' });
     }
 
     const property = payload.property || {};
     if (!property.name || !property.area) {
-      return res.status(400).json({ error: 'Property name and area are required' });
+      return res.status(400).json({ success: false, error: 'Property name and area are required' });
     }
 
     const trip = payload.trip || {};
     if (!trip.check_in || !trip.check_out) {
-      return res.status(400).json({ error: 'check_in and check_out dates are required' });
+      return res.status(400).json({ success: false, error: 'check_in and check_out dates are required' });
     }
 
     const inDate = new Date(trip.check_in);
     const outDate = new Date(trip.check_out);
     if (isNaN(inDate.getTime()) || isNaN(outDate.getTime())) {
-      return res.status(400).json({ error: 'Invalid check_in or check_out date format' });
+      return res.status(400).json({ success: false, error: 'Invalid check_in or check_out date format' });
     }
     if (outDate <= inDate) {
-      return res.status(400).json({ error: 'check_out date must be after check_in date' });
+      return res.status(400).json({ success: false, error: 'check_out date must be after check_in date' });
     }
 
     const guestCount = parseInt(trip.guest_count, 10);
     if (isNaN(guestCount) || guestCount < 1) {
-      return res.status(400).json({ error: 'guest_count must be a positive integer' });
+      return res.status(400).json({ success: false, error: 'guest_count must be a positive integer' });
     }
 
     const diffTime = Math.abs(outDate - inDate);
@@ -238,7 +238,7 @@ I’ve prepared your personalized Goa itinerary! You can ask me anytime for reco
     });
   } catch (err) {
     console.error('[Routes] Error processing booking:', err);
-    res.status(500).json({ error: 'Internal server error while processing booking' });
+    res.status(500).json({ success: false, error: 'Internal server error while processing booking' });
   }
 });
 

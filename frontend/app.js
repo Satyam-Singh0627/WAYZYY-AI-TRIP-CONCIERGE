@@ -1,7 +1,63 @@
 // ============================================================
-// WAYZYY — BOUTIQUE AI TRAVEL CONCIERGE APPLICATION CONTROLLER
-// Client-Side Router · Multi-Route Architecture · Demo Flow
+// API BASE URL CONFIGURATION & ENVIRONMENT RESOLUTION
 // ============================================================
+// Priority order:
+// 1. window.API_BASE_URL or window.API_URL (injected at build time or via script)
+// 2. Localhost fallback: If running locally on localhost / 127.0.0.1, use relative paths ('')
+// 3. Production fallback: If running on remote host (e.g. Vercel), route directly to Render backend:
+//    https://wayzyy-ai-trip-concierge.onrender.com
+const getApiBaseUrl = () => {
+  if (typeof window === 'undefined') return '';
+  if (window.API_BASE_URL) return window.API_BASE_URL.replace(/\/+$/, '');
+  if (window.API_URL) return window.API_URL.replace(/\/+$/, '');
+  if (window.NEXT_PUBLIC_API_URL) return window.NEXT_PUBLIC_API_URL.replace(/\/+$/, '');
+  if (window.VITE_API_URL) return window.VITE_API_URL.replace(/\/+$/, '');
+
+  const hostname = window.location.hostname || '';
+  const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '';
+  if (isLocal) {
+    return '';
+  }
+
+  // Deployed production environment (e.g. Vercel)
+  return 'https://wayzyy-ai-trip-concierge.onrender.com';
+};
+
+const API_BASE_URL = getApiBaseUrl();
+
+/**
+ * Robust fetch wrapper that inspects HTTP status and Content-Type before JSON parsing.
+ * Eliminates "Unexpected token 'T', 'The page c'... is not valid JSON" errors when
+ * receiving HTML or plain-text error pages from remote proxies or CDNs.
+ */
+async function safeFetchJson(url, options = {}) {
+  const res = await fetch(url, options);
+  const contentType = (res.headers.get('content-type') || '').toLowerCase();
+
+  let data = null;
+  if (contentType.includes('application/json')) {
+    try {
+      data = await res.json();
+    } catch (parseErr) {
+      throw new Error(`Server returned invalid JSON format from ${url}`);
+    }
+  } else {
+    // Non-JSON response (e.g. Vercel/Cloudflare 404/502/504 plain text or HTML)
+    const rawText = (await res.text()).trim();
+    const cleanSnippet = rawText.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').slice(0, 150);
+    throw new Error(`Server returned status ${res.status} (${cleanSnippet || res.statusText || 'non-JSON response'})`);
+  }
+
+  if (!res.ok) {
+    const errMessage = data?.error || data?.message || `Request failed with status ${res.status}`;
+    const error = new Error(errMessage);
+    error.status = res.status;
+    error.data = data;
+    throw error;
+  }
+
+  return data;
+}
 
 const state = {
   currentRoute: '/',
@@ -210,6 +266,8 @@ function switchAppSubView(subName, updateUrl = true) {
     renderItinerary();
   } else if (subName === 'explore') {
     loadExplorePlaces();
+  } else if (subName === 'settings') {
+    loadSystemStatus();
   }
 }
 
@@ -302,7 +360,7 @@ async function initializeDefaultBooking() {
   if (state.activeBooking) return;
 
   try {
-    const res = await fetch('/api/bookings', {
+    const data = await safeFetchJson(`${API_BASE_URL}/api/bookings`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -326,7 +384,6 @@ async function initializeDefaultBooking() {
       })
     });
 
-    const data = await res.json();
     if (data.success && data.booking) {
       state.activeBooking = data.booking;
       state.activeItinerary = data.itinerary;
@@ -334,10 +391,11 @@ async function initializeDefaultBooking() {
       renderItinerary();
       renderTodayPlan();
       fetchWeather();
+      refreshWeatherView();
       loadNotifications();
     }
   } catch (err) {
-    console.warn('Could not initialize default booking:', err);
+    console.warn('Using fallback booking session:', err.message);
   }
 }
 
@@ -427,7 +485,7 @@ function setupBookingForm() {
     setStep('pstep4', true);
 
     try {
-      const res = await fetch('/api/bookings', {
+      const data = await safeFetchJson(`${API_BASE_URL}/api/bookings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -438,7 +496,6 @@ function setupBookingForm() {
         })
       });
 
-      const data = await res.json();
       if (data.success && data.booking) {
         state.activeBooking = data.booking;
         state.activeItinerary = data.itinerary;
@@ -459,8 +516,10 @@ function setupBookingForm() {
         throw new Error(data.error || 'Failed to create booking');
       }
     } catch (err) {
+      console.error('Booking submission failed:', err);
       alert(`Booking error: ${err.message}`);
       if (btnSubmit) btnSubmit.disabled = false;
+      if (progressBox) progressBox.style.display = 'none';
     }
   });
 }
@@ -718,7 +777,7 @@ async function loadExplorePlaces() {
     if (state.exploreCategory === 'near_me') {
       const lat = state.activeBooking?.property?.coordinates?.lat || 15.5178;
       const lon = state.activeBooking?.property?.coordinates?.lng || 73.7634;
-      url = `/api/places/nearby?lat=${lat}&lon=${lon}&radius=20&limit=30`;
+      url = `${API_BASE_URL}/api/places/nearby?lat=${lat}&lon=${lon}&radius=20&limit=30`;
     } else {
       const params = new URLSearchParams();
       if (state.exploreQuery) params.set('q', state.exploreQuery);
@@ -726,11 +785,10 @@ async function loadExplorePlaces() {
         params.set('category', state.exploreCategory);
       }
       params.set('limit', '30');
-      url = `/api/places/search?${params.toString()}`;
+      url = `${API_BASE_URL}/api/places/search?${params.toString()}`;
     }
 
-    const res = await fetch(url);
-    const data = await res.json();
+    const data = await safeFetchJson(url);
     const places = data.places || data.results || [];
     state.explorePlaces = places;
 
@@ -790,7 +848,7 @@ async function loadExplorePlaces() {
 async function addPlaceToItinerary(placeId) {
   const bookingId = state.activeBooking?.booking_id || 'DEMO-8821';
   try {
-    const res = await fetch('/api/concierge/action', {
+    const data = await safeFetchJson(`${API_BASE_URL}/api/concierge/action`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -799,7 +857,6 @@ async function addPlaceToItinerary(placeId) {
         params: { place_id: placeId, time: '16:00' }
       })
     });
-    const data = await res.json();
     if (data.success && data.itinerary) {
       state.activeItinerary = data.itinerary;
       renderItinerary();
@@ -809,7 +866,7 @@ async function addPlaceToItinerary(placeId) {
       showToast(data.message || 'Could not add to itinerary.');
     }
   } catch (err) {
-    showToast('Failed to add activity to itinerary.');
+    showToast(`Failed to add activity: ${err.message}`);
   }
 }
 
@@ -896,13 +953,12 @@ async function sendConciergeMessage(messageText) {
   const bId = state.activeBooking.booking_id;
 
   try {
-    const res = await fetch('/api/concierge/chat', {
+    const data = await safeFetchJson(`${API_BASE_URL}/api/concierge/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ booking_id: bId, message: messageText })
     });
 
-    const data = await res.json();
     if (data.success) {
       appendChatMessage({
         sender: 'concierge',
@@ -913,7 +969,7 @@ async function sendConciergeMessage(messageText) {
   } catch (err) {
     appendChatMessage({
       sender: 'concierge',
-      message: "I'm having a brief connection delay checking our local Goa directory. Please ask again in just a moment."
+      message: `I'm having a brief connection delay (${err.message}). Please ask again in just a moment.`
     });
   }
 }
@@ -954,7 +1010,7 @@ async function executeConciergeAction(action, params = {}) {
   if (!state.activeBooking) return;
 
   try {
-    const res = await fetch('/api/concierge/action', {
+    const data = await safeFetchJson(`${API_BASE_URL}/api/concierge/action`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -964,7 +1020,6 @@ async function executeConciergeAction(action, params = {}) {
       })
     });
 
-    const data = await res.json();
     if (data.success) {
       state.activeItinerary = data.itinerary;
       renderItinerary();
@@ -977,6 +1032,7 @@ async function executeConciergeAction(action, params = {}) {
     }
   } catch (err) {
     console.error('Error executing action:', err);
+    showToast(`Action error: ${err.message}`);
   }
 }
 
@@ -1041,12 +1097,11 @@ function setupWeatherControls() {
 
 async function fetchWeather() {
   try {
-    const res = await fetch('/api/weather');
-    const data = await res.json();
+    const data = await safeFetchJson(`${API_BASE_URL}/api/weather`);
     state.activeWeather = data;
     updateWeatherUI(data);
   } catch (err) {
-    console.warn('Could not fetch current weather:', err);
+    console.warn('Could not fetch current weather:', err.message);
   }
 }
 
@@ -1083,8 +1138,7 @@ async function refreshWeatherView() {
   const bId = state.activeBooking.booking_id;
 
   try {
-    const res = await fetch(`/api/weather/forecast/${bId}`);
-    const data = await res.json();
+    const data = await safeFetchJson(`${API_BASE_URL}/api/weather/forecast/${bId}`);
     if (data.success) {
       state.activeForecast = data;
 
@@ -1157,13 +1211,12 @@ async function triggerWeatherScenario(scenario) {
   const bId = state.activeBooking.booking_id;
 
   try {
-    const res = await fetch('/api/weather/simulate', {
+    const data = await safeFetchJson(`${API_BASE_URL}/api/weather/simulate`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ scenario, booking_id: bId })
     });
 
-    const data = await res.json();
     if (data.success) {
       state.activeWeather = data.weather;
       updateWeatherUI(data.weather);
@@ -1219,16 +1272,15 @@ async function loadNotifications() {
   if (!state.activeBooking) return;
 
   try {
-    const res = await fetch(`/api/notifications/${state.activeBooking.booking_id}`);
-    const data = await res.json();
+    const data = await safeFetchJson(`${API_BASE_URL}/api/notifications/${state.activeBooking.booking_id}`);
     if (data.success) {
       state.notifications = data.notifications;
       const badge = document.getElementById('menuNotifBadge');
-      if (badge) badge.textContent = data.count.toString();
+      if (badge) badge.textContent = (data.count || 0).toString();
       renderNotifications();
     }
   } catch (err) {
-    console.warn('Error loading notifications:', err);
+    console.warn('Error loading notifications:', err.message);
   }
 
   const btnClearNotifs = document.getElementById('btnClearNotifs');
@@ -1272,6 +1324,30 @@ function renderNotifications() {
       </div>
     `;
   }).join('');
+}
+
+// ============================================================
+// SYSTEM & INTEGRATION STATUS
+// ============================================================
+async function loadSystemStatus() {
+  try {
+    const data = await safeFetchJson(`${API_BASE_URL}/api/status`);
+    const claudeEl = document.getElementById('settingsClaudeStatus');
+    const weatherEl = document.getElementById('settingsWeatherStatus');
+    const tgEl = document.getElementById('settingsTelegramStatus');
+
+    if (claudeEl && data.mode) {
+      claudeEl.textContent = `${data.mode.claude} AI`;
+    }
+    if (weatherEl && data.mode) {
+      weatherEl.textContent = `${data.mode.weather} WEATHER`;
+    }
+    if (tgEl && data.mode) {
+      tgEl.textContent = `${data.mode.telegram} TELEGRAM`;
+    }
+  } catch (err) {
+    console.warn('Could not load system status:', err.message);
+  }
 }
 
 // ============================================================
@@ -1670,8 +1746,7 @@ async function initLeafletGoaMap() {
 
   // Fetch real Goa places with real coordinates
   try {
-    const res = await fetch('/api/places/search?limit=60');
-    const data = await res.json();
+    const data = await safeFetchJson(`${API_BASE_URL}/api/places/search?limit=60`);
     const places = data.places || [];
 
     places.forEach(place => {
