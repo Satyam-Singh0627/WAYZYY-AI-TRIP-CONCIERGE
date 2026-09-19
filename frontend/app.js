@@ -1120,14 +1120,17 @@ async function refreshWeatherView() {
       // Render Hourly Strip
       const hourlyStrip = document.getElementById('hourlyStrip');
       if (hourlyStrip && data.hourly) {
-        hourlyStrip.innerHTML = data.hourly.map(h => `
-          <div class="hourly-card">
+        hourlyStrip.innerHTML = data.hourly.map(h => {
+          const isRainy = (typeof h.rain_probability === 'number' && h.rain_probability >= 50) || (h.icon && h.icon.includes('🌧'));
+          return `
+          <div class="hourly-card ${isRainy ? 'is-rainy' : ''}" title="${h.condition || ''}">
             <div class="hourly-time">${h.time}</div>
             <div class="hourly-icon">${h.icon}</div>
             <div class="hourly-temp">${h.temp}°C</div>
-            <div class="hourly-rain">💧 ${h.rain_probability}%</div>
+            <div class="hourly-rain ${isRainy ? 'rain-alert' : ''}">💧 ${h.rain_probability}%</div>
           </div>
-        `).join('');
+        `;
+        }).join('');
       }
 
       // Render Daily Grid

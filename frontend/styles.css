@@ -2263,6 +2263,134 @@ button {
 }
 
 /* ============================================================
+   24-HOUR HOURLY FORECAST STRIP
+   ============================================================ */
+.hourly-strip {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 6px 2px 14px 2px;
+  margin-top: 12px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+/* Subtle, polished custom scrollbar for horizontal forecast */
+.hourly-strip::-webkit-scrollbar {
+  height: 5px;
+}
+
+.hourly-strip::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: var(--radius-full);
+}
+
+.hourly-strip::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: var(--radius-full);
+}
+
+.hourly-strip::-webkit-scrollbar-thumb:hover {
+  background: var(--color-warm-gray);
+}
+
+.hourly-card {
+  flex: 0 0 94px;
+  min-width: 94px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+  scroll-snap-align: start;
+  user-select: none;
+  position: relative;
+  cursor: default;
+}
+
+.hourly-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--color-orange);
+  background: var(--bg-surface-hover);
+}
+
+.hourly-time {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+}
+
+.hourly-icon {
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 2px 4px rgba(23, 22, 20, 0.08));
+  transition: transform 0.2s ease;
+}
+
+.hourly-card:hover .hourly-icon {
+  transform: scale(1.15);
+}
+
+.hourly-temp {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.hourly-rain {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-rain);
+  background: var(--color-rain-subtle);
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.hourly-card.is-rainy {
+  border-color: #93C5FD;
+  background: linear-gradient(180deg, var(--bg-surface) 0%, rgba(239, 246, 255, 0.7) 100%);
+}
+
+.hourly-rain.rain-alert {
+  color: #1D4ED8;
+  background: #DBEAFE;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .hourly-strip {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    overflow-x: visible;
+  }
+  .hourly-card {
+    flex: initial;
+    min-width: 0;
+  }
+}
+
+/* ============================================================
    NOTIFICATIONS FEED & ALIGNMENT
    ============================================================ */
 .notifications-feed {
